@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=I Pin=J1-2
+Removed Pin From Net: NetName=VCC Pin=J1-8
+Change Component Footprint: Designator=J1 Old Footprint=DIP14 New Footprint=SIP6*2
+Added Pin To Net: NetName=I Pin=J1-4
+Added Pin To Net: NetName=VCC Pin=J1-10
