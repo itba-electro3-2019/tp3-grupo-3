@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.4.5)  1 NOV 2019 23:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.4.5)  1 NOV 2019 23:56
 entering extended mode
 **./Ejercicio-1.tex
 (Ejercicio-1.tex
@@ -891,6 +891,18 @@ LaTeX Warning: Label `fig:fsm' multiply defined.
 
 LaTeX Warning: Label `fig:fsm' multiply defined.
 
+
+LaTeX Warning: Label `fig:fsm' multiply defined.
+
+
+LaTeX Warning: Label `fig:fsm' multiply defined.
+
+
+LaTeX Warning: Label `fig:fsm' multiply defined.
+
+
+LaTeX Warning: Label `fig:fsm' multiply defined.
+
 )
 \openout1 = `Ejercicio-1.aux'.
 
@@ -1017,123 +1029,70 @@ Package pdftex.def Info: ImagenesEjercicio1/Bloques-TT.pdf  used on input line
 [1{C:/Users/Guido/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
  <./ImagenesEjercicio1/Bloques-TT.pdf>]
+<ImagenesEjercicio1/Mapa1.pdf, id=34, 202.13016pt x 165.73718pt>
+File: ImagenesEjercicio1/Mapa1.pdf Graphic file (type pdf)
+<use ImagenesEjercicio1/Mapa1.pdf>
+Package pdftex.def Info: ImagenesEjercicio1/Mapa1.pdf  used on input line 65.
+(pdftex.def)             Requested size: 358.50314pt x 293.96173pt.
 
-! LaTeX Error: Environment Karnaugh undefined.
+Underfull \hbox (badness 10000) in paragraph at lines 61--68
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.63    \begin{Karnaugh}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+ []
 
-! Undefined control sequence.
-l.64  \minterms
-               {0,2,4,7,8,9,10,11,12}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.65         \maxterms
-                      {1,3,5,6,13,14,15}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.67         \implicant
-                       {0}{8}{green}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.68         \implicantsol
-                          {7}{red}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.69         \implicant
-                       {8}{10}{orange}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.71         \implicantcantons
-                              {blue}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: \begin{document} ended by \end{Karnaugh}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73     \end{Karnaugh}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<ImagenesEjercicio1/fsm.jpeg, id=34, 776.9025pt x 582.67688pt>
+<ImagenesEjercicio1/Mapa2.pdf, id=35, 202.13016pt x 165.73718pt>
+File: ImagenesEjercicio1/Mapa2.pdf Graphic file (type pdf)
+<use ImagenesEjercicio1/Mapa2.pdf>
+Package pdftex.def Info: ImagenesEjercicio1/Mapa2.pdf  used on input line 72.
+(pdftex.def)             Requested size: 358.50314pt x 293.96173pt.
+[2 <./ImagenesEjercicio1/Mapa1.pdf>]
+<ImagenesEjercicio1/Mapa3.pdf, id=47, 123.48032pt x 100.6992pt>
+File: ImagenesEjercicio1/Mapa3.pdf Graphic file (type pdf)
+<use ImagenesEjercicio1/Mapa3.pdf>
+Package pdftex.def Info: ImagenesEjercicio1/Mapa3.pdf  used on input line 79.
+(pdftex.def)             Requested size: 358.50314pt x 292.3874pt.
+<ImagenesEjercicio1/Mapa4.pdf, id=48, 123.48032pt x 100.6992pt>
+File: ImagenesEjercicio1/Mapa4.pdf Graphic file (type pdf)
+<use ImagenesEjercicio1/Mapa4.pdf>
+Package pdftex.def Info: ImagenesEjercicio1/Mapa4.pdf  used on input line 85.
+(pdftex.def)             Requested size: 358.50314pt x 292.3874pt.
+ [3 <./ImagenesEjercicio1/Mapa2.pdf> <./ImagenesEjercicio1/Mapa3.pdf>]
+<ImagenesEjercicio1/fsm.jpeg, id=63, 776.9025pt x 582.67688pt>
 File: ImagenesEjercicio1/fsm.jpeg Graphic file (type jpg)
 <use ImagenesEjercicio1/fsm.jpeg>
-Package pdftex.def Info: ImagenesEjercicio1/fsm.jpeg  used on input line 79.
+Package pdftex.def Info: ImagenesEjercicio1/fsm.jpeg  used on input line 99.
 (pdftex.def)             Requested size: 358.50314pt x 268.87926pt.
-<ImagenesEjercicio1/post_logic.jpeg, id=35, 776.14969pt x 579.66562pt>
+<ImagenesEjercicio1/post_logic.jpeg, id=64, 776.14969pt x 579.66562pt>
 File: ImagenesEjercicio1/post_logic.jpeg Graphic file (type jpg)
 <use ImagenesEjercicio1/post_logic.jpeg>
 Package pdftex.def Info: ImagenesEjercicio1/post_logic.jpeg  used on input line
- 86.
+ 106.
 (pdftex.def)             Requested size: 358.50314pt x 267.75504pt.
-[2 <./ImagenesEjercicio1/fsm.jpeg>] [3 <./ImagenesEjercicio1/post_logic.jpeg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
-
-(Ejercicio-1.aux
+ [4 <./ImagenesEjercicio1/Mapa4.pdf> <./ImagenesEjercicio1/fsm.jpeg>] [5 <./Ima
+genesEjercicio1/post_logic.jpeg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
+ (Ejercicio-1.aux
 LaTeX Info: Redefining \. on input line 19.
 LaTeX Info: Redefining \% on input line 19.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
 Package rerunfilecheck Info: File `Ejercicio-1.out' has not changed.
 (rerunfilecheck)             Checksum: 1E64CD253E76108C2DB9B71D4D788C5A;52.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 28868 strings out of 492970
- 661329 string characters out of 3126595
- 860266 words of memory out of 3000000
- 32335 multiletter control sequences out of 15000+200000
+ 28895 strings out of 492970
+ 662075 string characters out of 3126595
+ 860267 words of memory out of 3000000
+ 32350 multiletter control sequences out of 15000+200000
  6252 words of font info for 25 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,18n,69p,445b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,18n,69p,445b,369s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Guido/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Guido/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><C:/Users/Guido/AppData/Local/Programs/MiKTeX 2.9/f
@@ -1143,9 +1102,9 @@ cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Guid
 o/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:
 /Users/Guido/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 msy10.pfb>
-Output written on Ejercicio-1.pdf (3 pages, 307024 bytes).
+Output written on Ejercicio-1.pdf (5 pages, 322479 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 109 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
