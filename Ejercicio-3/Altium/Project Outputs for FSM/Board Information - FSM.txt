@@ -1,0 +1,12 @@
+Board Information Report
+Filename     : C:\Users\Acer\Desktop\GitHub\ElectroIII\tp3-grupo-3\Ejercicio-3\Altium\FSM.PcbDoc
+Date         : 03-Nov-19
+Time         : 5:47:46 AM
+Time Elapsed : 00:00:00
+
+Routing Information
+    Routing completion, 100.00%
+    Connections, 48
+    Connections routed, 48
+    Connections remaining, 0
+count : 4
