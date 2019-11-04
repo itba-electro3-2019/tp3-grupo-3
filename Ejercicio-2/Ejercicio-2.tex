@@ -2,6 +2,18 @@
 
 \begin{document}
 
-Ejercicio 2
+\section{Ejercicio 2}
+\subsection{Introdución}
+En esta sección se procederá a realizar una maquina de estados capaz de detectar la secuencia de bits 1-1-0-1.
+
+\subsection{Implementación} 
+Para poder realizar esta detector de secuencias se consideró que el último bit de la secuencia puede ser el primero de una nueva, por ejemplo, si viene una cadena de bits de la siguiente forma 1-1-0-1-1-0-1 la maquina de estados detectará dos secuencias correctas de bits. A su vez se consideró que si un caracter es incorrecto la maquina de estado vuelve a su estado base inicial y se vuelve a comenzar. Se realizo el siguiente diagrama de estados utilizando una maquina de Mealy:
+\begin{figure}
+
+\end{figure}
+Al que le corresponde la siguiente tabla de verdad:
+
+
+Otorgandole la siguiente numeración a los estados: $A=00$, $B=01$, $C=10$, $D=11$, se obtine la siguiente tabla:
 
 \end{document}
