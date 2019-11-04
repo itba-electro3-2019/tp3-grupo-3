@@ -3,23 +3,20 @@
 module test;
 
   // My signal definitions
-  wire clk;
-  clock_gen clok(clk);
-  reg resetn = 1;
-
+  
+  
   wire  z;
   reg w; 
-  reader_13 ej2(clk,resetn,w,z);
+  seq_detector Ej_2(w,z);
   initial begin
 
-    resetn=1;
     #1
     w=1;
     #1
     w = 1;
-  	#2
+  	#1
     w = 1;
-    #2
+    #1
     w = 0;
     #1
     w = 1; 
@@ -42,7 +39,6 @@ module test;
 
 
 
-	//$monitor("Clock: %d, W: %d, Z: %d",clk,w,out);
 	
 
 
