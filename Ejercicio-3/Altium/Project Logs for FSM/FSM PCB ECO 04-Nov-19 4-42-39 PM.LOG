@@ -1,0 +1,10 @@
+Added Component: Designator=y1(LED3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=y2(LED3)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=y1 Pin=y1-1
+Added Pin To Net: NetName=GND' Pin=y1-2
+Added Pin To Net: NetName=y2 Pin=y2-1
+Added Pin To Net: NetName=GND' Pin=y2-2
+Added Member To Class: ClassName=U_FSM Member=Component y1 LED
+Added Member To Class: ClassName=U_FSM Member=Component y2 LED

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.12)  2 NOV 2019 21:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.12)  6 NOV 2019 16:01
 entering extended mode
 **./Ejercicio-3.tex
 (Ejercicio-3.tex
@@ -1037,44 +1037,80 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \realshift=\dimen297
 \realshift=\dimen298
 \realshift=\dimen299
- [2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 391.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 391.
- (Ejercicio-3.aux
+ [2]
+<ImagenesEjercicio3/states.png, id=72, 1027.84pt x 825.0825pt>
+File: ImagenesEjercicio3/states.png Graphic file (type png)
+<use ImagenesEjercicio3/states.png>
+Package pdftex.def Info: ImagenesEjercicio3/states.png  used on input line 392.
+
+(pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
+<ImagenesEjercicio3/vlevels_states.png, id=74, 1027.84pt x 825.0825pt>
+File: ImagenesEjercicio3/vlevels_states.png Graphic file (type png)
+<use ImagenesEjercicio3/vlevels_states.png>
+Package pdftex.def Info: ImagenesEjercicio3/vlevels_states.png  used on input l
+ine 398.
+(pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
+<ImagenesEjercicio3/states2.png, id=76, 1027.84pt x 825.0825pt>
+File: ImagenesEjercicio3/states2.png Graphic file (type png)
+<use ImagenesEjercicio3/states2.png>
+Package pdftex.def Info: ImagenesEjercicio3/states2.png  used on input line 406
+.
+(pdftex.def)             Requested size: 358.50314pt x 237.82822pt.
+ [3 <./ImagenesEjercicio3/states.png> <./ImagenesEjercicio3/vlevels_states.png>
+]
+<ImagenesEjercicio3/output.png, id=87, 1027.84pt x 825.0825pt>
+File: ImagenesEjercicio3/output.png Graphic file (type png)
+<use ImagenesEjercicio3/output.png>
+Package pdftex.def Info: ImagenesEjercicio3/output.png  used on input line 414.
+
+(pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
+<ImagenesEjercicio3/vlevels_low.png, id=89, 1027.84pt x 825.0825pt>
+File: ImagenesEjercicio3/vlevels_low.png Graphic file (type png)
+<use ImagenesEjercicio3/vlevels_low.png>
+Package pdftex.def Info: ImagenesEjercicio3/vlevels_low.png  used on input line
+ 420.
+(pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
+ [4 <./ImagenesEjercicio3/states2.png> <./ImagenesEjercicio3/output.png> <./Ima
+genesEjercicio3/vlevels_low.png (PNG copy)>] [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 446.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 446.
+
+(Ejercicio-3.aux
 LaTeX Info: Redefining \. on input line 19.
 LaTeX Info: Redefining \% on input line 19.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 391.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 391.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 446.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 446.
 Package rerunfilecheck Info: File `Ejercicio-3.out' has not changed.
 (rerunfilecheck)             Checksum: 2B886125DE28E61F4466ACC6CD1B8DD6;492.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 391.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 446.
  ) 
 Here is how much of TeX's memory you used:
- 31888 strings out of 492895
- 730391 string characters out of 3124202
- 1066928 words of memory out of 3000000
- 35364 multiletter control sequences out of 15000+200000
- 9653 words of font info for 38 fonts, out of 3000000 for 9000
+ 31921 strings out of 492895
+ 731278 string characters out of 3124202
+ 1067616 words of memory out of 3000000
+ 35389 multiletter control sequences out of 15000+200000
+ 9354 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,18n,69p,586b,1177s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,18n,69p,934b,1177s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Users/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/Acer/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Acer/AppData/Local/Programs/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Acer/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Acer/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Use
-rs/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Acer/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Use
+rs/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.
 pfb><C:/Users/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr6.pfb><C:/Users/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr7.pfb><C:/Users/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Acer/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Acer/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Ejercicio-3.pdf (3 pages, 204737 bytes).
+s/cm/cmr10.pfb><C:/Users/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr6.pfb><C:/Users/Acer/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Acer/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Acer/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Acer/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on Ejercicio-3.pdf (5 pages, 331563 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
