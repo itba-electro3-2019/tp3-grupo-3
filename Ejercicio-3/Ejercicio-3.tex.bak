@@ -191,7 +191,7 @@ Si este circuito fuese trabajado directamente sobre el silicio, se elegiría la 
 
 \subsection{Simulación}
 
-Se simuló la implementación obtenida en la sección anterior utilizando $Verilog$, un lenguaje descriptivo de hardware y $GTKWave$, un visualizador de señales.
+Se simuló la implementación obtenida en la sección anterior utilizando $Verilog$, un lenguaje descriptivo de hardware. Además, se construyó un test bench con todas las combinaciones posibles de entradas. Esta simulación obtuvo resultados exitosos. Se encuentra anexada esta simulación junto al test bench y un ejecutable junto a este informe.
 
 \subsection{Implementación}
 Para esta etapa se debió tener un cuidado especial dado que era un requisito en la implementación que la lógica interna del circuito funcione con $3.3V$ mientras que las entradas y salidas debían operar con $5V$.
@@ -244,7 +244,7 @@ Para la conversión de $3V3$ a $5V$ de la salida se decidió utilizar un trasist
 
 \subsubsection{Diseño Final}
 
-Finalmente se presenta a continuación el diseño final de la máquina de estados finitos implementada.
+Finalmente se presenta a continuación el diseño final de la máquina de estados finitos implementada en un PCB de $50mmx50mm$.
 
 \begin{figure}[H]
 	\hspace*{-0.6cm}
@@ -377,15 +377,70 @@ Finalmente se presenta a continuación el diseño final de la máquina de estado
 A continuación se detallan los componentes utilizados en la implementación:
 \begin{itemize}
 \item Dual Flip-flop D: \href{http://www.ti.com/lit/ds/symlink/cd4013b.pdf}{CD4013}
-\item Quad 2-input AND: \href{https://www.mouser.com/datasheet/2/308/74HC08.REV1-102589.pdf}{74HC02}
+\item Quad 2-input AND: \href{https://www.mouser.com/datasheet/2/308/74HC08.REV1-102589.pdf}{74HC08}
 \item Quad 2-input NOR: \href{https://assets.nexperia.com/documents/data-sheet/74HC_HCT02.pdf}{74HC02}
-\item BJT NPN: \LARGE{FALTA}
-\item Diodo Zener 3V3: \LARGE{FALTA}
+\item BJT NPN: \href{http://www.philohome.com/sensors/gp2d12/gp2d12-datasheets/bc548.pdf}{BC548}
 \end{itemize}
 
 \subsection{Mediciones}
 
+Se realizaron mediciones de tanto correcta transición entre estados como de niveles de tensión en el circuito.
+
+\begin{figure}[H]
+\begin{subfigure}{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth,trim={0 3.35cm 0.1cm 1.75cm},clip]{ImagenesEjercicio3/states.png}
+\caption{Medición de transiciones de estados: ..00-01-10-...-10-00-..}
+\label{states1}
+\end{subfigure}
+\begin{subfigure}{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth,trim={0 3.35cm 0.1cm 1.75cm},clip]{ImagenesEjercicio3/vlevels_states.png}
+\caption{Medición de los niveles de tensión.}
+\end{subfigure}
+\caption{Mediciones del circuito implementado.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth,trim={0 3.35cm 0.1cm 1.75cm},clip]{ImagenesEjercicio3/states2.png}
+\caption{Medición de la transición de estados: ..00-01-00-..}
+\label{states2}
+\end{figure}
+
+\begin{figure}[H]
+\begin{subfigure}{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth,trim={0 3.35cm 0.1cm 1.75cm},clip]{ImagenesEjercicio3/output.png}
+\caption{Medición de la transición de la salida del circuito.}
+\label{output}
+\end{subfigure}
+\begin{subfigure}{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth,trim={0 3.35cm 0.1cm 1.75cm},clip]{ImagenesEjercicio3/vlevels_low.png}
+\caption{Medición de los niveles de tensión en estado bajo..}
+\end{subfigure}
+\caption{Mediciones del circuito implementado.}
+\end{figure}
+
+Se puede observar que el level shifting de niveles de tensión funcionan correctamente. Los niveles de tensión son:
+\begin{itemize}
+\item $V_{OL} = 10mV$
+\item $V_{OH} = 4.8V$
+\item $V_{3V3_{H}} = \geq 3.1V$
+\item $V_{3V3_{L}} = \approx 0$
+\end{itemize}
+siendo $V_{3V3}$ el nivel de tensión de la lógica interna del circuito y $V_{OL}$ y $V_{OH}$ los niveles de tensión altos y bajos conseguidos a la salida $Z$.
+
+Luego, se observa en las Figuras (\ref{states1}) y (\ref{states2}) que la transición de estados funciona correctamente habiendo probado todas las combinaciones posibles, y en la Figura (\ref{output}) se observa que la salida posee los valores correctos, siendo cero para todos los estados excepto en el estado $01$ en el cual la salida es igual a un uno lógico. 
+El consumo de corriente del circuito es de $15mA$ en todos los estados excepto en el estado $01$ con un consumo de $32mA$.
+
 \subsection{Conclusiones}
 
+Se implementó la FSM propuesta habiendo cumplido los requisitos de niveles de tensión de lógica interna. Si bien la transición de $5V$ a $3V3$ funcionó correctamente, el consumo de corriente es muy elevado siendo este como máximo $32mA$. Si se hubiera querido un consumo menor, se debebería de haber utilizado step-down level-shifters utilizando transistores como se realizó para el step-up level-shifter. Este logró mantener la salida en una tensión muy baja para el estado lógico bajo y en una tensión aceptable para el estado de tensión lógico alto, con un error de $200mV$ por debajo del deseado. Sin embargo, estos niveles de tensión se encuentran totalmente dentro de estándares de márgenes de ruido tanto para la tecnología TTL como para CMOS. Luego, la tensión alta de la lógica interna de $3.1V$ se encuentra también dentro de los márgenes de ruido para ambas tecnologías.
+
+
+Otras posibles implementaciones para el step-down hubieran sido el uso de un divisor resistivo, lo cual hubiera disminuido mucho el consumo de corriente ya que los valores de resistencias utilizadas posibles hubieran sido cómodamente de unos $10k\Omega$ o más, ya que estos valores no eran lo suficiente altos ni como para generar un divisor resistivo con la impedancia de entrada de la compuerta CMOS ni para generar una corriente comparable con el consumo de estas compuertas. Otra implementación hubiera sido el uso de un comparador ya que este era más barato que un transistor, pero se descartó por su gran tamaño y por poseer implementaciones más simples con mismo resultado.
+ 
 
 \end{document}

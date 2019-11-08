@@ -1,0 +1,6 @@
+Added Pin To Net: NetName=YY1 Pin=74HC08-3
+Added Pin To Net: NetName=YY1 Pin=CD4013-5
+Added Net: Name=YY1
+Added Pin To Net: NetName=YY2 Pin=74HC08-6
+Added Pin To Net: NetName=YY2 Pin=CD4013-9
+Added Net: Name=YY2
