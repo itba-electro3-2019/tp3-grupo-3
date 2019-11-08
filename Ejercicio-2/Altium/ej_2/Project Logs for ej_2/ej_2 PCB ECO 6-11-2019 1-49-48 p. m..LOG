@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=not_y1 Pin=U1-10
+Removed Pin From Net: NetName=not_y2 Pin=U1-11
+Added Pin To Net: NetName=not_y2 Pin=U1-10
+Added Pin To Net: NetName=not_y1 Pin=U1-11
+Added Pin To Net: NetName=VDD Pin=U2-14
+Added Room: Name=ej_2

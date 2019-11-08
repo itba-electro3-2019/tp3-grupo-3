@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=VCC Pin=U2-7
+Added Pin To Net: NetName=GND Pin=U2-7
+Added Pin To Net: NetName=VCC Pin=U2-14
+Added Room: Name=ej_2
