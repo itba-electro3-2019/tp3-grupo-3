@@ -1,0 +1,9 @@
+Change Component Designator: OldDesignator=J1 NewDesignator=Alimentacion
+Change Component Designator: OldDesignator=J2 NewDesignator=Inputs
+Change Component Designator: OldDesignator=TP1 NewDesignator=Vout
+Change Component Designator: OldDesignator=TP2 NewDesignator=y1
+Change Component Designator: OldDesignator=TP3 NewDesignator=y2
+Added Pin To Net: NetName=GND Pin=U2-7
+Added Pin To Net: NetName=VCC Pin=U2-14
+Change Net Name : Old Net Name=NetTP1_1 New Net Name=NetU1_12
+Added Room: Name=ej_2

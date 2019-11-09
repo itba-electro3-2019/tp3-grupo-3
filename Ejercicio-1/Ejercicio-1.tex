@@ -4,32 +4,36 @@
 
 \subsection{Ejercicio 1}
 
-En este ejercicio se implementará un sistema de control para un tanque de agua, el cual cuenta con dos sensores, I y S los cuales indican si el tanque está lleno ,justo en la mitad o vacío. Las condiciones de diseño serán las siguientes:
+En este ejercicio se implementa un sistema de control para un tanque de agua, el cual cuenta con dos sensores, siendo estos I y S, los cuales indican si el tanque está lleno, por la mitad o vacío. Las condiciones de diseño son las siguientes:
 \begin{itemize}
-\item Cuando está vacío (I=0, S=0) deben prenderse las dos bombas $B_0 \ y \ B_1$.
-\item Cuando esté lleno (I=1, S=1) deben apagarse las bombas.
-\item Cuando esté por la mitad (I=1, S=0) se activará una sola bomba, pero deberán alternar entre sí cual trabaja.
+\item Cuando está vacío (I = 0, S = 0) se prenden las dos bombas $B_0 \ y \ B_1$.
+\item Cuando se encuentra lleno (I = 1, S = 1) se apagan las bombas.
+\item Cuando está por la mitad (I = 1, S = 0) se activa una sola bomba, pero estas se alternan entre sí al establecer cual trabaja.
 \end{itemize}
+
 Estas limitaciones se corresponden con la siguiente tabla de verdad:
 \begin{table}[H]
 \centering
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{cccc}
 \hline
 \textbf{I}              & \textbf{S}             & \textbf{$B_1$}         & \textbf{$B_2$} \\ \hline
-0                       & 0                      & 1                      & 1              \\ \hline
-0                       & 1                      & x                      & x              \\ \hline
-1                       & 0                      & \multicolumn{2}{c|}{Alternado}          \\ \hline
-\multicolumn{1}{|l|}{1} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{0} & 0              \\ \hline
+0                       & 0                      & 1                      & 1              \\ 
+0                       & 1                      & x                      & x              \\ 
+1                       & 0                      & \multicolumn{2}{c}{Alternado}          \\ 
+\multicolumn{1}{l}{1} & \multicolumn{1}{l}{1} & \multicolumn{1}{l}{0} & 0              \\ \hline
 \end{tabular}
+\caption{Tabla de verdad del sistema.}
 \end{table}
-A partir de aqui se diseño la siguiente FSM.
+
+A partir de lo expuesto previamente, se diseña la siguiente FSM.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{ImagenesEjercicio1/Bloques-TT.pdf}
 	\caption{Finite state machine.}
 	\label{fig:fsm}
 \end{figure}
-A partir de aquí se puede hacer una tabla de transiciones.
+
+Con lo presentado en la Figura (\ref{fig:fsm}), se confecciona una tabla de transiciones.
 \begin{table}[H]
 \centering
 \begin{tabular}{|c|cccc|cc|}
@@ -39,12 +43,13 @@ A partir de aquí se puede hacer una tabla de transiciones.
                        & 0-0       & 0-1       & 1-0      & 1-1                  &            &           \\ \hline
 A                      & x         & x         & B        & x                   & 1          & 0         \\ \cline{1-1}
 B                      & A         & x         & x        & C                  & 0          & 1         \\ \cline{1-1}
-C                      & x         & x         & B        & x                  & 0         \\ \hline
+C                      & x         & x         & B        & x                  & 0        & 0  \\ \hline
 \end{tabular}
-\caption{Tabla de transiciones}
+\caption{Tabla de transiciones del sistema.}
 \label{tab:estados}
 \end{table}
-A partir de la tabla (\ref{tab:estados}) y la figura (\ref{fig:fsm}) se puede llegar a la siguiente tabla, donde $y_i$ es la salida de los flip-flops e $Y_i$ es la entrada.
+
+A partir de la Tabla (\ref{tab:estados}) y la Figura (\ref{fig:fsm}) se puede llegar a la siguiente tabla, donde $y_1$ e $y_2$ representan la salida de los flip-flops, mientras que $Y_1$ e $Y_2$ la entrada de los mismos.
 \begin{table}[H]
 \centering
 \begin{tabular}{|cc|cccc|cc|}
@@ -58,54 +63,69 @@ A partir de la tabla (\ref{tab:estados}) y la figura (\ref{fig:fsm}) se puede ll
 \multicolumn{1}{|c|}{D} & 11                    & x                                                         & x                                                         & x                                                                              & x                                                         & x                & x                 \\ \hline
 \end{tabular}
 \end{table}
-Donde la variable ambos hace referencia a caundo se deben prender ambas bomba y la variable Toggle a cuando debe prenderse una solo e intercambiar.\\
-De aquí se pasa a resolver los mapas de karnaugh para cada variable:\\
- \begin{figure}[H]
-	\centering
+
+Se destaca que la variable ``Ambos'' hace referencia a estado en el cual se deben prender ambas bombas, mientras que la variable ``Toggle'' a cuando debe prenderse una sola e intercambiar.
+
+Luego, se prosigue a resolver los mapas de Karnaugh para cada variable:
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}{.49\textwidth}
+\centering
 	\includegraphics[width=0.7\textwidth]{ImagenesEjercicio1/Mapa1.pdf}
-	\caption{Tabla de Karnaugh Y1.}
-	\label{fig:fsm}
-\end{figure}
-
- \begin{figure}[H]
-	\centering
+	\caption{Tabla de Karnaugh para $Y_1$.}
+	\label{fig:fsm1}
+\end{subfigure}
+\begin{subfigure}{.49\textwidth}
+\centering
 	\includegraphics[width=0.7\textwidth]{ImagenesEjercicio1/Mapa2.pdf}
-	\caption{Tabla de Karnaugh Y2.}
-	\label{fig:fsm}
+	\caption{Tabla de Karnaugh para $Y_2$.}
+	\label{fig:fsm2}
+\end{subfigure} \\
+\begin{subfigure}{.49\textwidth}
+\centering
+	\includegraphics[width=0.5\textwidth]{ImagenesEjercicio1/Mapa3.pdf}
+	\caption{Tabla de Karnaugh para ``Ambos''.}
+	\label{fig:fsm3}
+\end{subfigure}
+\begin{subfigure}{.49\textwidth}
+\centering
+	\includegraphics[width=0.5\textwidth]{ImagenesEjercicio1/Mapa4.pdf}
+	\caption{Tabla de Karnaugh para ``Toggle''.}
+	\label{fig:fsm4}
+\end{subfigure}
+\caption{Tablas de Karnaugh para cada variable analizada.}
+\label{fig:kar}
 \end{figure}
 
- \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{ImagenesEjercicio1/Mapa3.pdf}
-	\caption{Tabla de Karnaugh Ambos.}
-	\label{fig:fsm}
+A partir de la Figura (\ref{fig:kar}) se derivan las siguientes expresiones:
+\begin{equation}
+\begin{split}
+	Y_1 = & I \\
+	Y_2 = & S 
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+Ambos = & \ \overline{y_2+y_1} \\
+Toggle = & \ y_1
+\end{split}
+\end{equation}
+
+Luego, se procede a obtener los circuitos para la FSM.
+\begin{figure}[H]
+\centering
+	\includegraphics[width=0.6\textwidth, page=1]{ImagenesEjercicio1/Circuitos.pdf}
+		\caption{Circuito FSM.}
+	\label{fig:fsm1}
 \end{figure}
- \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{ImagenesEjercicio1/Mapa4.pdf}
-	\caption{Tabla de Karnaugh Toggle.}
-	\label{fig:fsm}
-\end{figure}
-A partir de las tablas se derivan las siguientes expresiones:
-\begin{align}
-	Y_1 = I \ \ \ Y_2=S 
-\end{align}
-\begin{align}
-Ambos= \overline{y_2+y_1} \ \ Toggle= y_1
-\end{align}
-De aquí se obtienen los siguientes circuitos para la FSM:
- \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{ImagenesEjercicio1/fsm.jpeg}
-	\caption{Circuito FSM.}
-	\label{fig:fsm}
-\end{figure}
-y agregando el siguiente circuito lógico permite implementar la función de toggle junto a la lógica de salida.
- \begin{figure}[H]
+
+Agregando el siguiente circuito lógico, se implementa la función de Toggle junto a la lógica de salida.
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{ImagenesEjercicio1/post_logic.jpeg}
-	\caption{Circuito FSM.}
-	\label{fig:fsm}
+	\caption{Circuito FSM con Toggle.}
+	\label{fig:fsm2}
 \end{figure}
 A partir de estos circuitos se realizó el PCB del mismo:
  \begin{figure}[H]
