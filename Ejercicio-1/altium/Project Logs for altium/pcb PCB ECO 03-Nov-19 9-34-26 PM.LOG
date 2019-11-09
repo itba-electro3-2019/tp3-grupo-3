@@ -1,0 +1,16 @@
+Added Component: Designator=c1(0805)
+Added Component: Designator=c2(0805)
+Added Component: Designator=c3(0805)
+Added Component: Designator=c4(0805)
+Added Pin To Net: NetName=VCC Pin=c1-1
+Added Pin To Net: NetName=GND Pin=c1-2
+Added Pin To Net: NetName=VCC Pin=c2-1
+Added Pin To Net: NetName=GND Pin=c2-2
+Added Pin To Net: NetName=VCC Pin=c3-1
+Added Pin To Net: NetName=GND Pin=c3-2
+Added Pin To Net: NetName=VCC Pin=c4-1
+Added Pin To Net: NetName=GND Pin=c4-2
+Added Member To Class: ClassName=Sheet1 Member=Component c1 CAP
+Added Member To Class: ClassName=Sheet1 Member=Component c2 CAP
+Added Member To Class: ClassName=Sheet1 Member=Component c3 CAP
+Added Member To Class: ClassName=Sheet1 Member=Component c4 CAP
