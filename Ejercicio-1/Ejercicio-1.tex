@@ -1,8 +1,4 @@
-\input{../Informe/Header.tex}
-
-\begin{document}
-
-\subsection{Ejercicio 1}
+\subsection{Introducción}
 
 En este ejercicio se implementa un sistema de control para un tanque de agua, el cual cuenta con dos sensores, siendo estos I y S, los cuales indican si el tanque está lleno, por la mitad o vacío. Las condiciones de diseño son las siguientes:
 \begin{itemize}
@@ -11,7 +7,8 @@ En este ejercicio se implementa un sistema de control para un tanque de agua, el
 \item Cuando está por la mitad (I = 1, S = 0) se activa una sola bomba, pero estas se alternan entre sí al establecer cual trabaja.
 \end{itemize}
 
-Estas limitaciones se corresponden con la siguiente tabla de verdad:
+\subsection{Análisis del sistema}
+Las limitaciones previamente mencionadas se corresponden con la siguiente tabla de verdad:
 \begin{table}[H]
 \centering
 \begin{tabular}{cccc}
@@ -123,71 +120,71 @@ Luego, se procede a obtener los circuitos para la FSM.
 Agregando el siguiente circuito lógico, se implementa la función de Toggle junto a la lógica de salida.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{ImagenesEjercicio1/post_logic.jpeg}
+	\includegraphics[width=0.8\textwidth, page=2]{ImagenesEjercicio1/Circuitos.pdf}
 	\caption{Circuito FSM con Toggle.}
 	\label{fig:fsm2}
 \end{figure}
-A partir de estos circuitos se realizó el PCB del mismo:
- \begin{figure}[H]
+
+\subsection{Implementación y mediciones}
+
+Una vez establecidos los circuitos y a partir de ellos, se procedió a implementarlos en PCB:
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{ImagenesEjercicio1/PCB.PNG}
-	\caption{PCB.}
-	\label{fig:fsm}
+	\caption{PCB en Altium de los circuitos.}
 \end{figure}
-Dicha placa se llevo a cabo con resultados positivos.
- \begin{figure}[H]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{ImagenesEjercicio1/pcbReal.jpeg}
-	\caption{PCB implementado.}
-	\label{fig:fsm}
+	\caption{Placa implementada.}
 \end{figure}
-Luego se proecidió a medir los niveles de tensión para las transiciones posibles:
- \begin{figure}[H]
+
+Finalmente, se procedió a medir los niveles de tensión para las transiciones posibles. A continuación se presentan los resultados.
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{ImagenesEjercicio1/00-01.PNG}
 	\caption{Transición 00-01.}
 	\label{fig:0001}
 \end{figure}
- \begin{figure}[H]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{ImagenesEjercicio1/00-10.PNG}
 	\caption{Transición 00-10.}
 	\label{fig:0010}
 \end{figure}
- \begin{figure}[H]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{ImagenesEjercicio1/01-00.PNG}
 	\caption{Transición 01-00.}
 	\label{fig:0100}
 \end{figure}
- \begin{figure}[H]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{ImagenesEjercicio1/01-11.PNG}
 	\caption{Transición 01-11.}
 	\label{fig:0111}
 \end{figure}
- \begin{figure}[H]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{ImagenesEjercicio1/10-00.PNG}
 	\caption{Transición 10-00.}
 	\label{fig:1000}
 \end{figure}
- \begin{figure}[H]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{ImagenesEjercicio1/10-11.PNG}
 	\caption{Transición 10-11.}
 	\label{fig:1011}
 \end{figure}
- \begin{figure}[H]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{ImagenesEjercicio1/11-01.PNG}
 	\caption{Transición 11-01.}
 	\label{fig:1101}
 \end{figure}
- \begin{figure}[H]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{ImagenesEjercicio1/11-10.PNG}
 	\caption{Transición 11-10.}
 	\label{fig:1110}
 \end{figure}
-\end{document}
