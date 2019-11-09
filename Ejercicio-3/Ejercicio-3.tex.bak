@@ -4,17 +4,15 @@
 
 \subsection{Introducción}
 
-Se quiso implementar la siguiente máquina de estados finitos:
-
+En esta sección se buscó implementar la siguiente máquina de estados finitos:
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth]{ImagenesEjercicio3/fsm.png}
-\caption{Máquina de estados finitos a implementar.}
-\label{fig:fsm}
+	\includegraphics[width=0.6\textwidth]{ImagenesEjercicio3/fsm.png}
+	\caption{Máquina de estados finitos a implementar.}
+	\label{fig:fsmimp}
 \end{figure} 
 
 Para esto, se conformó la tabla de estados considerando al estado $00$ como el inicial, resultando:
-
 \begin{table}[H]
 \centering
 \begin{tabular}{|c|l|c|l|c|l|c|}
@@ -31,8 +29,7 @@ Para esto, se conformó la tabla de estados considerando al estado $00$ como el 
 \label{fig:tablaestados}
 \end{table}
 
-Como fue necesario implementar tres estados se requirió utilizar dos flip-flops. Luego, se hallaron las fórmulas lógicas para los estados siguientes utilizando mapas de karnaugh.
-
+Como fue necesario implementar tres estados, se requirió utilizar dos flip-flops. Luego, se hallaron las fórmulas lógicas para los estados siguientes utilizando mapas de Karnaugh.
 \begin{figure}[H]
 \begin{subfigure}{0.49\textwidth}
 \begin{centering}
@@ -46,6 +43,7 @@ Como fue necesario implementar tres estados se requirió utilizar dos flip-flops
         
     \end{Karnaughvuit}
 \par\end{centering}
+
 \begin{equation*}
 Y_2 = wy_1+wy_2
 \end{equation*}
@@ -76,127 +74,51 @@ Y_1 = w(\overline{y_2}\cdot \overline{y_1})
 \caption{Mapas de Karnaugh para los próximos estados de la maquina de estados finitos.}
 \end{figure}
 
-Utilizando el teorema de DeMorgan y simplificando se obtienen dos posibles implementaciones análogas:
+Utilizando el teorema de De Morgan y simplificando se obtienen dos posibles implementaciones análogas:
 \begin{figure}[H]
 \begin{subfigure}{0.49\textwidth}
 \vspace*{-0.17cm}
 \begin{equation*}
-\left.\left\{
+\left\{
 \begin{aligned}
 		& Y_1 = w(\overline{y_2}\cdot \overline{y_1})	 \\		
 		& Y_2 = w\overline{(\overline{y_2}\cdot \overline{y_1})}\\		
 \end{aligned}
-\right.\right\}
+\right.
 \end{equation*}
 \caption{Implementación con NAND.}
 \end{subfigure}
 \begin{subfigure}{0.49\textwidth}
 \begin{equation*}
-\left.\left\{
+\left\{
 \begin{aligned}
 		& Y_1 = w(\overline{y_2+y_1}) \\		
 		& Y_2 = w(y_2+y_1)\\		
 \end{aligned}
-\right.\right\}
+\right.
 \end{equation*}
 \caption{Implementación con AND y NOR.}
 \end{subfigure}
 \end{figure}
 
-Si este circuito fuese trabajado directamente sobre el silicio, se elegiría la implementación con NAND ya que sería la más simple de realizar. Sin embargo, como se contruirá un PCB, se decidió utilizar la implementación con AND y NOR ya que se deberían de utilizar solamente dos integrados para el circuito lógico de entrada y salida, a diferencia de la implementación con NAND, que requeriría de tres integrados (utilizando un total de nueve NAND's). Finalmente, a partir de las ecuaciones obtenidas se esquematizó la implementación teórica.
+Si este circuito fuese trabajado directamente sobre el silicio, se elegiría la implementación con compuertas NAND, ya que esta forma es la más simple de realizar. Sin embargo, como se realizó sobre un PCB, se decidió utilizar la implementación con AND y NOR, debido a que de esta manera se utilizan solamente dos integrados para el circuito lógico de entrada y salida, a diferencia de la implementación con NAND, el cual requiere de tres integrados, utilizando un total de nueve NAND's. Finalmente, a partir de las ecuaciones obtenidas se esquematizó la implementación teórica.
 
 \begin{figure}[H]
-	\hspace*{1cm}
 	\centering
-	\begin{circuitikz}
-		\draw
-			
-			(0,0)
-			node[fourport](FF1){}
-				(FF1.1) ++ (0.12,0) node[]{\scalebox{1.2}{\rotatebox{-90}{$\triangle$}}}
-				 ++ (-0.12,0) node[](FF1_CLK){}
-				(FF1.2) ++ (-0.25, 0) node[](){$\overline{y_1}$}
-				node[](FF1_2){}
-				(FF1.3) ++ (-0.25, 0) node[](){$y_1$}
-				node[](FF1_3){}
-				(FF1.4) ++ (0.25, 0) node[](){$Y_1$}
-				node[](FF1_4){}
-				(FF1_CLK) to[short] ++ (-0.5, 0)
-					node[](FF1_CLK){}
-				(FF1.3) to[short] ++ (0.5, 0)
-					node[](FF1_y){}
-				(FF1.4) to[short] ++ (-0.5, 0)
-					node[](FF1_Y){}
-					
-				
-			(0,-3)
-			node[fourport](FF2){}
-				(FF2.1) ++ (0.12,0) node[]{\scalebox{1.2}{\rotatebox{-90}{$\triangle$}}}
-				 ++ (-0.12,0) node[](FF2_CLK){}
-				(FF2.2) ++ (-0.25, 0) node[](){$\overline{y_2}$}
-				node[](FF2_-y){}
-				(FF2.3) ++ (-0.25, 0) node[](){$y_2$}
-				node[](FF2_y){}
-				(FF2.4) ++ (0.25, 0) node[](){$Y_2$}
-				node[](FF2_Y){}
-				(FF2_CLK) to[short] ++ (-0.5, 0)
-					node[](FF2_CLK){}
-				(FF2.2) to[short] ++ (0.5, 0)
-					node[](FF2_-y){}
-				(FF2.3) to[short] ++ (1, 0)
-					node[](FF2_y){}
-				(FF2.4) to[short] ++ (-0.5, 0)
-					node[](FF2_Y){}		
-					
-					
-			(-4, -4)node[ocirc, label=west:$CLK$](CLK){}
-				(CLK) to[short] ++ (2.5,0) |-(FF2_CLK.center)
-				(CLK) to[open, -*]++(2.5, 0.55) |-(FF1_CLK.center)
-				
-			(FF1_Y) ++ (-0.5, 0) node[and port, xscale=0.7, yscale=0.7](and1){}
-			(and1.in 1) ++ (-0.5, 0) node[nor port, xscale=0.7, yscale=0.7](nor1){}
-			
-			(FF2_Y) ++ (-0.5, 0) node[and port, xscale=0.7, yscale=0.7](and2){}
-			(and2.in 2) ++ (-0.5, 0) node[nor port, xscale=0.7, yscale=0.7](nor2){}
-			(and2.in 2) ++ (-2, 0) node[nor port, xscale=0.7, yscale=0.7](nor3){}
-		
-			(-4, -1)node[ocirc, label=west:$w$](w){}
-			(w)-|(and1.in 2)
-			(w)-|(and2.in 1)
-			
-			(nor2.in 1) -- (nor2.in 2)
-			(nor2.in 1) to[open, -*] ++ (0, -0.2) -- (nor3.out)
-			(and2.in 2) -- (nor2.out)
-			(and1.in 1) -- (nor1.out)
-			(and1.out) -- (FF1_Y.center)
-			(and2.out) -- (FF2_Y.center)
-			
-			(4, -1.5) node[and port, xscale=0.7, yscale=0.7](andout){}
-			(FF2_-y) to[short]++(1, 0) |- (andout.in 2)
-
-			(FF1_y)to[short]++(0, 1)to[short]++(-8,0)
-				to[short, -*]++(0, -0.6)node[](aux){}
-				(aux.center)--(nor1.in 1)
-				(aux.center)|-(nor3.in 1)
-				
-			(FF2_y)to[short]++(0, -2)to[short]++(-8,0)|-(nor3.in 2)
-			++(-0.25, 0) node[circ]{} |- (nor1.in 2)
-			
-			(FF1_y.center)node[circ]{}to[short]++(1, 0)|-(andout.in 1)
-			(andout.out)to[short, -o] ++ (0.5, 0) node[label=east:$z$]{}
-		;
-	\end{circuitikz}
-	\caption{Implementación teórica de la lógica de entrada, estados y lógica de salida de la máquina de estados finitos a implementar.}
+	\includegraphics[width=0.8\textwidth, page=1]{ImagenesEjercicio3/Maquina.pdf}
+	\caption{Implementación teórica de la lógica de entrada, estados y lógica de salida.}
 \end{figure}
+
 
 \subsection{Simulación}
 
-Se simuló la implementación obtenida en la sección anterior utilizando $Verilog$, un lenguaje descriptivo de hardware. Además, se construyó un test bench con todas las combinaciones posibles de entradas. Esta simulación obtuvo resultados exitosos. Se encuentra anexada esta simulación junto al test bench y un ejecutable junto a este informe.
+Se simuló la implementación obtenida en la sección anterior utilizando $Verilog$. Además, se construyó un test bench con todas las combinaciones posibles de entradas. Esta simulación obtuvo resultados exitosos. Se encuentra anexada esta simulación junto al test bench y un ejecutable junto a este informe.
 
 \subsection{Implementación}
-Para esta etapa se debió tener un cuidado especial dado que era un requisito en la implementación que la lógica interna del circuito funcione con $3.3V$ mientras que las entradas y salidas debían operar con $5V$.
+Para esta etapa se tuvo un cuidado especial dado que era un requisito en la implementación que la lógica interna del circuito funcione con $3.3 \ V$, mientras que las entradas y salidas debían operar con $5 \ V$.
+
 \subsubsection{Level Shifting}
-Para la conversión de $3V3$ a $5V$ de la salida se decidió utilizar un trasistor bipolar NPN como indica la Figura (\ref{circ:stepup}). Luego, para la entradas, las cuales debían pasar de $5V$ a $3V3$ se utilizó un diodo zener de $3V3$ con una resistencia limitadora de corriente calculada conociendo la corriente de codo del diodo y la corriente de entrada de las compuertas de tecnología CMOS utilizadas. Esta implementación se puede observar en la Figura(\ref{circ:stepdown}). 
+Para la conversión de $3.3 \ V$ a $5 \ V$ de la salida se decidió utilizar un transistor bipolar NPN como indica la Figura (\ref{circ:stepup}). Luego, para las entradas, las cuales deben pasar de $5 \ V$ a $3.3 \ V	$, se utilizó un diodo zener de $3.3 \ V$ con una resistencia limitadora de corriente, la cual fue calculada conociendo la corriente de codo del diodo y la corriente de entrada de las compuertas de tecnología CMOS empleadas. Esta implementación se puede observar en la Figura(\ref{circ:stepdown}). 
 
 \begin{figure}[H]
 
@@ -208,15 +130,15 @@ Para la conversión de $3V3$ a $5V$ de la salida se decidió utilizar un trasist
 			(0,0)
 			node[ocirc, label=west:$In$](in){}
 			++(2, 0) node[npn, rotate=-90](npn){}
-			(npn.B) ++ (0, 2)node[ocirc, label=north:$3V3$](3v3){}
-			(3v3)to[R=$2k2$]++(0, -2)
-			(3v3)++(2, 0)node[ocirc, label=north:$5V$](5v){}
-			(5v)to[R=$6k8$]++(0, -2)to[short, -*]++(0, -0.83)
+			(npn.B) ++ (0, 2)node[ocirc, label=north:$3.3 \ V$](3v3){}
+			(3v3)to[R=$2.2 \ k\Omega$]++(0, -2)
+			(3v3)++(2, 0)node[ocirc, label=north:$5 \ V$](5v){}
+			(5v)to[R=$6.8 \ k\Omega$]++(0, -2)to[short, -*]++(0, -0.83)
 			(npn.C) to[short]++(2.5, 0)node[ocirc, label=east:$Out$]{}
 			(npn.E)--(in.center)			
 			;
 		\end{circuitikz}
-		\caption{\centering Transistor BJT NPN en configuración base común utilizado como step-up level-shifter.}
+		\caption{\centering Transistor NPN en base común utilizado como step-up level-shifter.}
 		\label{circ:stepup}
 	\end{subfigure}
 	\begin{subfigure}{0.49\textwidth}
@@ -225,10 +147,10 @@ Para la conversión de $3V3$ a $5V$ de la salida se decidió utilizar un trasist
 			\draw
 				(0,0)
 				node[ocirc, label=west:$In$]{}
-				to[R, l^=$100\Omega$]++(2.5,0)
+				to[R, l^=$100 \ \Omega$]++(2.5,0)
 				to[open]++(0, -2)
 				node[tlground]{}
-				to[full ZZener diode, l_=$3V3$, -*] ++ (0, 2)
+				to[full ZZener diode, l_=$3.3 \ V$, -*] ++ (0, 2)
 				
 				to[short] ++ (1, 0)
 				node[ocirc, label=east:$Out$]{}
@@ -236,7 +158,7 @@ Para la conversión de $3V3$ a $5V$ de la salida se decidió utilizar un trasist
 				to[open]++(0, 1.45)
 			;
 		\end{circuitikz}
-		\caption{\centering Regulador de tensión de $3V3$ con diodo zener y resistencia utilizado como step-down level-shifter.}
+		\caption{\centering Regulador de tensión de $3.3 \ V$ con zener y resistencia utilizados como step-down level-shifter.}
 		\label{circ:stepdown}
 	\end{subfigure}
 
@@ -244,135 +166,14 @@ Para la conversión de $3V3$ a $5V$ de la salida se decidió utilizar un trasist
 
 \subsubsection{Diseño Final}
 
-Finalmente se presenta a continuación el diseño final de la máquina de estados finitos implementada en un PCB de $50mmx50mm$.
+Finalmente se presenta a continuación el diseño final de la máquina de estados finitos implementada en un PCB de $50 mm \ x \ 50 mm$.
 
 \begin{figure}[H]
-	\hspace*{-0.6cm}
 	\centering
-	\scalebox{0.85}{
-	\begin{circuitikz}
-		\draw
-			
-			(0,0)
-			node[fourport](FF1){}
-				(FF1.1) ++ (0.12,0) node[]{\scalebox{1.2}{\rotatebox{-90}{$\triangle$}}}
-				 ++ (-0.12,0) node[](FF1_CLK){}
-				(FF1.2) ++ (-0.25, 0) node[](){$\overline{y_1}$}
-				node[](FF1_2){}
-				(FF1.3) ++ (-0.25, 0) node[](){$y_1$}
-				node[](FF1_3){}
-				(FF1.4) ++ (0.25, 0) node[](){$Y_1$}
-				node[](FF1_4){}
-				(FF1_CLK) to[short] ++ (-0.5, 0)
-					node[](FF1_CLK){}
-				(FF1.3) to[short] ++ (0.5, 0)
-					node[](FF1_y){}
-				(FF1.4) to[short] ++ (-0.5, 0)
-					node[](FF1_Y){}
-					
-				
-			(0,-3)
-			node[fourport](FF2){}
-				(FF2.1) ++ (0.12,0) node[]{\scalebox{1.2}{\rotatebox{-90}{$\triangle$}}}
-				 ++ (-0.12,0) node[](FF2_CLK){}
-				(FF2.2) ++ (-0.25, 0) node[](){$\overline{y_2}$}
-				node[](FF2_-y){}
-				(FF2.3) ++ (-0.25, 0) node[](){$y_2$}
-				node[](FF2_y){}
-				(FF2.4) ++ (0.25, 0) node[](){$Y_2$}
-				node[](FF2_Y){}
-				(FF2_CLK) to[short] ++ (-0.5, 0)
-					node[](FF2_CLK){}
-				(FF2.2) to[short] ++ (0.5, 0)
-					node[](FF2_-y){}
-				(FF2.3) to[short] ++ (1, 0)
-					node[](FF2_y){}
-				(FF2.4) to[short] ++ (-0.5, 0)
-					node[](FF2_Y){}		
-					
-					
-			(-4, -4)node[label=north:$CLK'$](CLK){}
-				(CLK) to[short] ++ (2.5,0) |-(FF2_CLK.center)
-				(CLK) to[open, -*]++(2.5, 0.55) |-(FF1_CLK.center)
-				
-			(FF1_Y) ++ (-0.5, 0) node[and port, xscale=0.7, yscale=0.7](and1){}
-			(and1.in 1) ++ (-0.5, 0) node[nor port, xscale=0.7, yscale=0.7](nor1){}
-			
-			(FF2_Y) ++ (-0.5, 0) node[and port, xscale=0.7, yscale=0.7](and2){}
-			(and2.in 2) ++ (-0.5, 0) node[nor port, xscale=0.7, yscale=0.7](nor2){}
-			(and2.in 2) ++ (-2, 0) node[nor port, xscale=0.7, yscale=0.7](nor3){}
-		
-			(-4, -1)node[label=north:$w'$](w){}
-			(w)-|(and1.in 2)
-			(w)-|(and2.in 1)
-			
-			(nor2.in 1) -- (nor2.in 2)
-			(nor2.in 1) to[open, -*] ++ (0, -0.2) -- (nor3.out)
-			(and2.in 2) -- (nor2.out)
-			(and1.in 1) -- (nor1.out)
-			(and1.out) -- (FF1_Y.center)
-			(and2.out) -- (FF2_Y.center)
-			
-			(4, -1.5) node[and port, xscale=0.7, yscale=0.7](andout){}
-			(FF2_-y) to[short]++(1, 0) |- (andout.in 2)
-
-			(FF1_y)to[short]++(0, 1)to[short]++(-8,0)
-				to[short, -*]++(0, -0.6)node[](aux){}
-				(aux.center)--(nor1.in 1)
-				(aux.center)|-(nor3.in 1)
-				
-			(FF2_y)to[short]++(0, -2)to[short]++(-8,0)|-(nor3.in 2)
-			++(-0.25, 0) node[circ]{} |- (nor1.in 2)
-			
-			(FF1_y.center)node[circ]{}to[short]++(1, 0)|-(andout.in 1)
-			(andout.out)to[short] ++ (0.5, 0) node[label=north:$z'$]{}
-
-			
-			(andout.out)
-			node[](in){}
-			++(1.5, 0) node[npn, rotate=-90](npn){}
-			(npn.B) ++ (0, 2)node[](3v3){}
-			(3v3)to[R=$2k2$]++(0, -2)
-			(3v3)++(2, 0)node[](5v){}
-			(5v)to[R=$6k8$]++(0, -2)to[short, -*]++(0, -0.83)
-			(npn.C) to[short]++(2.5, 0)node[ocirc, label=east:$z$]{}
-			(npn.E)--(in.center)
-						
-			(w)++(-7, 0)			
-				node[label=west:$w$]{}
-				to[R, l^=$100\Omega$]++(3,0)
-				to[open]++(0, -2)
-				node[tlground]{}
-				to[full ZZener diode, l_=$3V3$, -*] ++ (0, 2)
-				to[short]++(4.12,0)
-				
-			(CLK)++(-7, 0)			
-				node[label=west:$CLK$]{}
-				to[R, l^=$100\Omega$]++(3,0)
-				to[open]++(0, -2)
-				node[tlground]{}
-				to[full ZZener diode, l_=$3V3$, -*] ++ (0, 2)
-				to[short]++(4.12,0)
-				
-			(w) ++ (0, 3) ++(-7, 0)			
-				node[label=west:$5V$]{}
-				to[R, l^=$100\Omega$]++(3,0)
-				to[open]++(0, -2)
-				node[tlground]{}
-				to[full ZZener diode, l_=$3V3$, -*] ++ (0, 2)
-				node[](aux2){}
-				to[short]++(0, 0.5)
-				to[open]++(0, -0.5)
-				to[short]++(13.62,0)
-				to[short]++(0, -0.65)
-				(aux2)to[short]++(0, 0.75)to[short]++(1, 0)node[ocirc, label=east:$3V3$]{}
-			(w) ++ (0, 3) ++(-6.5, 0) to[short]++(0, 1.5)to[short]++(18.12, 0)to[short]++(0, -2.15)
-		;
-	\end{circuitikz}
-	}
+	\includegraphics[width=\textwidth, page=2]{ImagenesEjercicio3/Maquina.pdf}
 	\caption{Implementación de la máquina de estados finitos junto a la conversión de niveles de tensión.}
 \end{figure}
-
+	
 \subsubsection{Componentes}
 A continuación se detallan los componentes utilizados en la implementación:
 \begin{itemize}
@@ -425,22 +226,20 @@ Se realizaron mediciones de tanto correcta transición entre estados como de niv
 
 Se puede observar que el level shifting de niveles de tensión funcionan correctamente. Los niveles de tensión son:
 \begin{itemize}
-\item $V_{OL} = 10mV$
-\item $V_{OH} = 4.8V$
-\item $V_{3V3_{H}} = \geq 3.1V$
-\item $V_{3V3_{L}} = \approx 0$
+\item $V_{OL} = 10 \ mV$
+\item $V_{OH} = 4.8 \ V$
+\item $V_{3.3_{H}} \geq 3.1 \ V$
+\item $V_{3.3_{L}} \approx 0 \ V$
 \end{itemize}
-siendo $V_{3V3}$ el nivel de tensión de la lógica interna del circuito y $V_{OL}$ y $V_{OH}$ los niveles de tensión altos y bajos conseguidos a la salida $Z$.
 
-Luego, se observa en las Figuras (\ref{states1}) y (\ref{states2}) que la transición de estados funciona correctamente habiendo probado todas las combinaciones posibles, y en la Figura (\ref{output}) se observa que la salida posee los valores correctos, siendo cero para todos los estados excepto en el estado $01$ en el cual la salida es igual a un uno lógico. 
-El consumo de corriente del circuito es de $15mA$ en todos los estados excepto en el estado $01$ con un consumo de $32mA$.
+Se destaca que $V_{3.3}$ representa el nivel de tensión de la lógica interna del circuito, mientras que $V_{OL}$ y $V_{OH}$ son los niveles de tensión altos y bajos conseguidos a la salida $Z$.
+
+Luego, se observa en las Figuras (\ref{states1}) y (\ref{states2}) que la transición de estados funciona correctamente habiendo probado todas las combinaciones posibles. Por otro lado, en la Figura (\ref{output}) se observa que la salida posee los valores adecuados, siendo cero para todos los estados excepto en el $01$, para el cual la salida es igual a un uno lógico. Finalmente, se destaca que el consumo de corriente del circuito es de $15 \ mA$ en todos los estados excepto en el estado $01$ posee un consumo de $32 \ mA$.
 
 \subsection{Conclusiones}
 
-Se implementó la FSM propuesta habiendo cumplido los requisitos de niveles de tensión de lógica interna. Si bien la transición de $5V$ a $3V3$ funcionó correctamente, el consumo de corriente es muy elevado siendo este como máximo $32mA$. Si se hubiera querido un consumo menor, se debebería de haber utilizado step-down level-shifters utilizando transistores como se realizó para el step-up level-shifter. Este logró mantener la salida en una tensión muy baja para el estado lógico bajo y en una tensión aceptable para el estado de tensión lógico alto, con un error de $200mV$ por debajo del deseado. Sin embargo, estos niveles de tensión se encuentran totalmente dentro de estándares de márgenes de ruido tanto para la tecnología TTL como para CMOS. Luego, la tensión alta de la lógica interna de $3.1V$ se encuentra también dentro de los márgenes de ruido para ambas tecnologías.
+Se implementó la FSM propuesta habiendo cumplido los requisitos de niveles de tensión de lógica interna. Si bien la transición de $5 \ V$ a $3.3 \ V$ funcionó correctamente, el consumo de corriente es muy elevado, observandose un máximo de $32 \ mA$. Si se hubiera deseado un consumo menor, se debería utilizar un step-down level-shifters, valiéndose transistores como se realizó para el step-up level-shifter. Este logró mantener la salida en una tensión muy baja para el estado lógico bajo y en una tensión aceptable para el estado de tensión lógico alto, con un error de $200 \ mV$ por debajo del deseado. Sin embargo, estos niveles de tensión se encuentran totalmente dentro de estándares de márgenes de ruido tanto para la tecnología TTL como para CMOS. Luego, la tensión alta de la lógica interna de $3.1 \ V$ se encuentra también dentro de los márgenes de ruido para ambas tecnologías.
 
-
-Otras posibles implementaciones para el step-down hubieran sido el uso de un divisor resistivo, lo cual hubiera disminuido mucho el consumo de corriente ya que los valores de resistencias utilizadas posibles hubieran sido cómodamente de unos $10k\Omega$ o más, ya que estos valores no eran lo suficiente altos ni como para generar un divisor resistivo con la impedancia de entrada de la compuerta CMOS ni para generar una corriente comparable con el consumo de estas compuertas. Otra implementación hubiera sido el uso de un comparador ya que este era más barato que un transistor, pero se descartó por su gran tamaño y por poseer implementaciones más simples con mismo resultado.
- 
+Otras posibles implementaciones para el step-down parten del uso de un divisor resistivo, lo cual disminuye el consumo de corriente, ya que dentro de los valores de resistencias que se pueden utilizar, se hayan aquellas de $10 \ k\Omega$ o más, ya que estos valores no son lo suficientemente altos como para generar un divisor resistivo con la impedancia de entrada de la compuerta CMOS ni para provocar una corriente comparable con el consumo de estas compuertas. Otra implementación se centra en el uso de un comparador. Este último es más barato que un transistor, pero se descartó por su gran tamaño y por poseer implementaciones más simples con mismo resultado.
 
 \end{document}

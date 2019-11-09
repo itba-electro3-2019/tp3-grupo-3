@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.14)  9 NOV 2019 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.14)  9 NOV 2019 15:47
 entering extended mode
-**./Ejercicio-3.tex
-(Ejercicio-3.tex
+**./Informe.tex
+(Informe.tex
 LaTeX2e <2018-12-01>
-(../Informe/Header.tex
+(Header.tex
 ("C:\Users\Usuario\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls
 "
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -916,11 +916,11 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 ("C:\Users\Usuario\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendla
 yer/tikz/libraries\tikzlibrarymatrix.code.tex"
 File: tikzlibrarymatrix.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-)) (Ejercicio-3.aux
+)) (Informe.aux
 LaTeX Info: Redefining \. on input line 19.
 LaTeX Info: Redefining \% on input line 19.
 )
-\openout1 = `Ejercicio-3.aux'.
+\openout1 = `Informe.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
@@ -1023,120 +1023,157 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
- (Ejercicio-3.out) (Ejercicio-3.out)
+ (Informe.out) (Informe.out)
 \@outlinefile=\write4
-\openout4 = `Ejercicio-3.out'.
+\openout4 = `Informe.out'.
 
-<ImagenesEjercicio3/fsm.png, id=38, 653.44125pt x 417.81094pt>
-File: ImagenesEjercicio3/fsm.png Graphic file (type png)
-<use ImagenesEjercicio3/fsm.png>
-Package pdftex.def Info: ImagenesEjercicio3/fsm.png  used on input line 11.
-(pdftex.def)             Requested size: 307.29288pt x 196.47954pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 16.
+ (Caratula.tex
 
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 4.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 9.
 ("C:\Users\Usuario\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
 "
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 16.
+LaTeX Font Info:    Try loading font information for U+msb on input line 9.
 
 ("C:\Users\Usuario\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{C:/Users/Usuario/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+) [1
 
- <./ImagenesEjercicio3/fsm.png>]
-<ImagenesEjercicio3/Maquina.pdf, id=59, page=1, 404.36572pt x 213.79573pt>
-File: ImagenesEjercicio3/Maquina.pdf Graphic file (type pdf)
-<use ImagenesEjercicio3/Maquina.pdf, page 1>
-Package pdftex.def Info: ImagenesEjercicio3/Maquina.pdf , page1 used on input l
-ine 109.
+{C:/Users/Usuario/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
+(Informe.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@toc=\write5
+\openout5 = `Informe.toc'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 \newpage
+              [1] (../Ejercicio-3/Ejercicio-3.tex
+<../Ejercicio-3/ImagenesEjercicio3/fsm.png, id=77, 653.44125pt x 417.81094pt>
+File: ../Ejercicio-3/ImagenesEjercicio3/fsm.png Graphic file (type png)
+<use ../Ejercicio-3/ImagenesEjercicio3/fsm.png>
+Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/fsm.png  used on inp
+ut line 6.
+(pdftex.def)             Requested size: 307.29288pt x 196.47954pt.
+ [2 <../Ejercicio-3/ImagenesEjercicio3/fsm.png>]
+<../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf, id=92, page=1, 404.36572pt x 21
+3.79573pt>
+File: ../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf Graphic file (type pdf)
+<use ../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf, page 1>
+Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf , page1 
+used on input line 104.
 (pdftex.def)             Requested size: 409.72124pt x 216.63663pt.
 \realshift=\dimen288
 \realshift=\dimen289
 \realshift=\dimen290
 \realshift=\dimen291
-<ImagenesEjercicio3/Maquina.pdf, id=62, page=2, 677.55232pt x 298.78426pt>
-File: ImagenesEjercicio3/Maquina.pdf Graphic file (type pdf)
-<use ImagenesEjercicio3/Maquina.pdf, page 2>
-Package pdftex.def Info: ImagenesEjercicio3/Maquina.pdf , page2 used on input l
-ine 174.
+ [3 <../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf>]
+<../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf, id=124, page=2, 677.55232pt x 2
+98.78426pt>
+File: ../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf Graphic file (type pdf)
+<use ../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf, page 2>
+Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf , page2 
+used on input line 169.
 (pdftex.def)             Requested size: 512.1496pt x 225.8611pt.
- [2 <./ImagenesEjercicio3/Maquina.pdf>]
-<ImagenesEjercicio3/states.png, id=95, 1027.84pt x 825.0825pt>
-File: ImagenesEjercicio3/states.png Graphic file (type png)
-<use ImagenesEjercicio3/states.png>
-Package pdftex.def Info: ImagenesEjercicio3/states.png  used on input line 194.
+<../Ejercicio-3/ImagenesEjercicio3/states.png, id=129, 1027.84pt x 825.0825pt>
+File: ../Ejercicio-3/ImagenesEjercicio3/states.png Graphic file (type png)
+<use ../Ejercicio-3/ImagenesEjercicio3/states.png>
+Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/states.png  used on 
+input line 189.
+(pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
+<../Ejercicio-3/ImagenesEjercicio3/vlevels_states.png, id=131, 1027.84pt x 825.
+0825pt>
+File: ../Ejercicio-3/ImagenesEjercicio3/vlevels_states.png Graphic file (type p
+ng)
+<use ../Ejercicio-3/ImagenesEjercicio3/vlevels_states.png>
+Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/vlevels_states.png  
+used on input line 195.
+(pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
+ [4 <../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf>]
+<../Ejercicio-3/ImagenesEjercicio3/states2.png, id=161, 1027.84pt x 825.0825pt>
 
-(pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
-<ImagenesEjercicio3/vlevels_states.png, id=97, 1027.84pt x 825.0825pt>
-File: ImagenesEjercicio3/vlevels_states.png Graphic file (type png)
-<use ImagenesEjercicio3/vlevels_states.png>
-Package pdftex.def Info: ImagenesEjercicio3/vlevels_states.png  used on input l
-ine 200.
-(pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
-<ImagenesEjercicio3/states2.png, id=99, 1027.84pt x 825.0825pt>
-File: ImagenesEjercicio3/states2.png Graphic file (type png)
-<use ImagenesEjercicio3/states2.png>
-Package pdftex.def Info: ImagenesEjercicio3/states2.png  used on input line 208
-.
+File: ../Ejercicio-3/ImagenesEjercicio3/states2.png Graphic file (type png)
+<use ../Ejercicio-3/ImagenesEjercicio3/states2.png>
+Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/states2.png  used on
+ input line 203.
 (pdftex.def)             Requested size: 358.50314pt x 237.82822pt.
- [3 <./ImagenesEjercicio3/states.png> <./ImagenesEjercicio3/vlevels_states.png>
- <./ImagenesEjercicio3/Maquina.pdf>]
-<ImagenesEjercicio3/output.png, id=119, 1027.84pt x 825.0825pt>
-File: ImagenesEjercicio3/output.png Graphic file (type png)
-<use ImagenesEjercicio3/output.png>
-Package pdftex.def Info: ImagenesEjercicio3/output.png  used on input line 216.
-
+<../Ejercicio-3/ImagenesEjercicio3/output.png, id=163, 1027.84pt x 825.0825pt>
+File: ../Ejercicio-3/ImagenesEjercicio3/output.png Graphic file (type png)
+<use ../Ejercicio-3/ImagenesEjercicio3/output.png>
+Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/output.png  used on 
+input line 211.
 (pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
-<ImagenesEjercicio3/vlevels_low.png, id=121, 1027.84pt x 825.0825pt>
-File: ImagenesEjercicio3/vlevels_low.png Graphic file (type png)
-<use ImagenesEjercicio3/vlevels_low.png>
-Package pdftex.def Info: ImagenesEjercicio3/vlevels_low.png  used on input line
- 222.
-(pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
- [4 <./ImagenesEjercicio3/states2.png> <./ImagenesEjercicio3/output.png> <./Ima
-genesEjercicio3/vlevels_low.png (PNG copy)>] [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
+<../Ejercicio-3/ImagenesEjercicio3/vlevels_low.png, id=165, 1027.84pt x 825.082
+5pt>
+File: ../Ejercicio-3/ImagenesEjercicio3/vlevels_low.png Graphic file (type png)
 
-(Ejercicio-3.aux
+<use ../Ejercicio-3/ImagenesEjercicio3/vlevels_low.png>
+Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/vlevels_low.png  use
+d on input line 217.
+(pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
+ [5 <../Ejercicio-3/ImagenesEjercicio3/states.png> <../Ejercicio-3/ImagenesEjer
+cicio3/vlevels_states.png> <../Ejercicio-3/ImagenesEjercicio3/states2.png>]) [6
+ <../Ejercicio-3/ImagenesEjercicio3/output.png> <../Ejercicio-3/ImagenesEjercic
+io3/vlevels_low.png (PNG copy)>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
+
+(Informe.aux
 LaTeX Info: Redefining \. on input line 19.
 LaTeX Info: Redefining \% on input line 19.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
-Package rerunfilecheck Info: File `Ejercicio-3.out' has not changed.
-(rerunfilecheck)             Checksum: 2B886125DE28E61F4466ACC6CD1B8DD6;492.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 246.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 36.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 36.
+Package rerunfilecheck Info: File `Informe.out' has not changed.
+(rerunfilecheck)             Checksum: 2791046B1417742B31D2CE4FCE369488;680.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 36.
  ) 
 Here is how much of TeX's memory you used:
- 29976 strings out of 492895
- 682457 string characters out of 3122801
- 884733 words of memory out of 3000000
- 33443 multiletter control sequences out of 15000+200000
- 9354 words of font info for 37 fonts, out of 3000000 for 9000
+ 30050 strings out of 492895
+ 684013 string characters out of 3122801
+ 884824 words of memory out of 3000000
+ 33492 multiletter control sequences out of 15000+200000
+ 19552 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,19n,69p,946b,1177s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,19n,69p,982b,1177s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Usuario/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Usuario/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Usuario
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:
-/Users/Usuario/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmmi7.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmmi9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Usuario/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Usuario/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Usua
-rio/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><
+ 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Usuario/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Usuari
+o/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
 C:/Users/Usuario/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb>
-Output written on Ejercicio-3.pdf (5 pages, 334694 bytes).
+cm/cmmi5.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi7.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Usuario/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Usuario/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/
+Usuario/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.p
+fb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Usuario/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Informe.pdf (7 pages, 382778 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 147 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 240 PDF objects out of 1000 (max. 8388607)
+ 29 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
