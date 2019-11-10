@@ -34,8 +34,8 @@ A partir de esta tabla se realizaron los respectivos mapas de karnaugh para las 
 
 \begin{figure}[H]
 \centering
-\includegraphics{ImagenesEjercicio2/pend.jpg}
-\caption{MEter mapitas de karnaugh}
+\includegraphics{ImagenesEjercicio2/mapitas.jpg}
+\caption{Mapas de karnaugh primero del primer Flip-Flop, luego del segundo y por último la salida deseada}
 \end{figure}
 Con los que se obtienen las siguientes funciones:
 $Y_1=(w\bar{y_2}\bar{y_1})+(wy_1y_2)+(\bar{w}y_2\bar{y_1})$
@@ -44,8 +44,8 @@ $Z=wy_2y_1$
 Utilizando 2 flip-flops tipo D para representar las 4 combinaciones posibles para obtener todos los posibles estados, considerando que los proximos estados se pueden representar como la entrada de dichos flip-flops y la salida de estos como el estado actual, se presenta el siguiente circuito:
 \begin{figure}[H]
 \centering
-\includegraphics{ImagenesEjercicio2/pend.jpg}
-\caption{MEter circuitito bien hecho }
+\includegraphics{ImagenesEjercicio2/circuito.jpg}
+\caption{Circuito a implimitar que cumple con la maquina de estados deseada}
 \end{figure}
 \end{document}
 
@@ -53,9 +53,24 @@ Consecuentemente se procedio a realizar la simulación en verilog de dicho circu
 
 \begin{figure}[H]
 \centering
-\includegraphics{ImagenesEjercicio2/pend.jpg}
-\caption{Simulaciones en GTKwave}
+\includegraphics{ImagenesEjercicio2/simulacion.png}
+\caption{Simulaciones en GTKwave, donde w simboliza la entrada, z la salida y clk el clock del circuito}
 \end{figure}
 \end{document}
 
-Como era de esperarse dicho circuito emula satisfactoriamente la máquina de estados planteada por lo que se puede detectar correctamente la secuencia de bits deseados. Ulteriormente de las simulaciones se procedio a diseñar dicho circuito en PCB con el cual se obtuvieron los mismos resultados por lo que se corroboró el correcto funcionamiento de la máquina de estados implementada.
+Como era de esperarse dicho circuito emula satisfactoriamente la máquina de estados planteada, por lo que se puede detectar correctamente la secuencia de bits deseados cuando esta se presenta. Ulteriormente de las simulaciones se procedio a diseñar dicho circuito en PCB con el cual se obtuvieron los mismos resultados por lo que se corroboró el correcto funcionamiento de la máquina de estados implementada, como se puede presenciar en las siguientes figuras.
+
+\begin{figure}[H]
+\centering
+\includegraphics{ImagenesEjercicio2/pcb.png}
+\caption{Implementación en PCB del circuito implementado }
+\end{figure}
+\end{document}
+
+\begin{figure}[H]
+\centering
+\includegraphics{ImagenesEjercicio2/pend.jpg}
+\caption{Detección de la secuencia deseada vista en el osciloscopio }
+\end{figure}
+\end{document}
+
