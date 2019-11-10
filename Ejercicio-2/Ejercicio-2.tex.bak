@@ -10,7 +10,7 @@ En esta sección se procede a realizar una máquina de estados capaz de detectar
 Para poder realizar este detector se consideró que el último bit de la secuencia puede ser el primero de una nueva, es decir, dada una cadena de bits de la forma 1-1-0-1-1-0-1, la máquina de estados detecta dos secuencias correctas de bits. También se consideró que, si un caracter es incorrecto, la el sistema vuelve a su estado base inicial, comenzando el proceso de nuevo. Es así que se realizo el siguiente diagrama de estados, utilizando una máquina de Mealy:
 \begin{figure}[H]
 \centering
-	\includegraphics[width=0.7\textwidth, page = 1]{ImagenesEjercicio2/FSM2.pdf}
+	\includegraphics{ImagenesEjercicio2/pend.jpg}
 	\caption{Diagrama de la máquina de Mealy utilizada para detectar la secuencia de bits.}
 \end{figure}
 
@@ -76,16 +76,17 @@ Se emplean 2 flip-flops tipo D para representar las 4 combinaciones posibles, ob
 Consecuentemente, se procedió a realizar la simulación en Verilog de dicho circuito. De esta forma se obtuvieron los siguientes resultados:
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{ImagenesEjercicio2/simulacion.png}
+\includegraphics{ImagenesEjercicio2/simulacion.png}
 \caption{Simulaciones en GTKwave, donde w simboliza la entrada, z la salida y clk el clock del circuito}
 \end{figure}
 
 Como era de esperarse, dicho circuito emula satisfactoriamente la máquina de estados planteada, por lo que se puede detectar correctamente la secuencia de bits deseados cuando esta se presenta. Posteriormente a las simulaciones, se procedió a diseñar dicho circuito en PCB, con el cual se obtuvieron los mismos resultados, por lo que se corroboró el correcto funcionamiento de la máquina de estados implementada, como se puede presenciar en las siguientes figuras.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{ImagenesEjercicio2/pcb.png}
+\includegraphics{ImagenesEjercicio2/pcb.png}
 \caption{Implementación en PCB del circuito implementado.}
 \end{figure}
+\end{document}
 
 \begin{figure}[H]
 \centering

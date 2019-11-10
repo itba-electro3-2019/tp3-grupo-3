@@ -25,22 +25,23 @@ Las limitaciones previamente mencionadas se corresponden con la siguiente tabla 
 A partir de lo expuesto previamente, se diseña la siguiente FSM.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{ImagenesEjercicio1/Bloques-TT.pdf}
-	\caption{Finite state machine.}
+	\includegraphics[width=0.5\textwidth, page = 1]{ImagenesEjercicio1/FSM1.pdf}
+	\caption{Finite State Machine.}
 	\label{fig:fsm}
 \end{figure}
 
 Con lo presentado en la Figura (\ref{fig:fsm}), se confecciona una tabla de transiciones.
 \begin{table}[H]
 \centering
-\begin{tabular}{|c|cccc|cc|}
+\begin{tabular}{ccccccc}
 \hline
-\textbf{Estado Acutal} & \multicolumn{4}{c|}{\textbf{Estado Futuro}} & \multicolumn{2}{c|}{\textbf{Salida}} \\ \hline
-                       & I-S       & I-S       & I-S      & I-S               & Ambos        & Toggle        \\
-                       & 0-0       & 0-1       & 1-0      & 1-1                  &            &           \\ \hline
-A                      & x         & x         & B        & x                   & 1          & 0         \\ \cline{1-1}
-B                      & A         & x         & x        & C                  & 0          & 1         \\ \cline{1-1}
-C                      & x         & x         & B        & x                  & 0        & 0  \\ \hline
+\multirow{3}{*}{Estado actual} & \multicolumn{4}{c}{Próximo estado} & \multicolumn{2}{c}{Salida} \\
+ & I-S & I-S & I-S & I-S & Ambos & Toggle \\
+ & \multicolumn{1}{l}{0-0} & \multicolumn{1}{l}{0-1} & \multicolumn{1}{l}{1-0} & \multicolumn{1}{l}{1-1} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+ \hline
+A & X & X & B & X & 1 & 0 \\
+B & A & X & X & C & 0 & 1 \\
+\hline
 \end{tabular}
 \caption{Tabla de transiciones del sistema.}
 \label{tab:estados}
@@ -49,15 +50,17 @@ C                      & x         & x         & B        & x                  &
 A partir de la Tabla (\ref{tab:estados}) y la Figura (\ref{fig:fsm}) se puede llegar a la siguiente tabla, donde $y_1$ e $y_2$ representan la salida de los flip-flops, mientras que $Y_1$ e $Y_2$ la entrada de los mismos.
 \begin{table}[H]
 \centering
-\begin{tabular}{|cc|cccc|cc|}
+\begin{tabular}{cccccccc}
 \hline
-\textbf{Estado Acutal}  & \textbf{Codificación} & \multicolumn{4}{c}{\textbf{Estado Futuro}}                                                                                                                                                                                                                         & \multicolumn{2}{c|}{\textbf{Salida}} \\ \hline
-\multicolumn{1}{|c|}{}  & $y_2 - y_1$           & \begin{tabular}[c]{@{}c@{}}$Y_2 - Y_1$\\ I-S\end{tabular} & \begin{tabular}[c]{@{}c@{}}$Y_2 - Y_1$\\ I-S\end{tabular} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}$Y_2 - Y_1$\\ I-S\end{tabular}} & \begin{tabular}[c]{@{}c@{}}$Y_2 - Y_1$\\ I-S\end{tabular} & Ambos            & Toggle            \\
-\multicolumn{1}{|c|}{}  &                       & 0-0                                                       & 0-1                                                       & \multicolumn{1}{c|}{1-0}                                                       & 1-1                                                       &                  &                   \\ \hline
-\multicolumn{1}{|c|}{A} & 00                    & x                                                         & x                                                         & 01                                                                             & x                                                         & 1                & 0                 \\ \cline{1-1}
-\multicolumn{1}{|c|}{B} & 01                    & 00                                                        & x                                                         & x                                                                              & 11                                                        & 0                & 1                 \\ \cline{1-1}
-\multicolumn{1}{|c|}{C} & 10                    & x                                                         & x                                                         & 01                                                                             & x                                                         & 0                & 0                 \\ \cline{1-1}
-\multicolumn{1}{|c|}{D} & 11                    & x                                                         & x                                                         & x                                                                              & x                                                         & x                & x                 \\ \hline
+\multirow{3}{*}{Estado actual} & Codificación & \multicolumn{4}{c}{Próximo estado} & \multicolumn{2}{c}{Salida} \\
+ & $y_2 - y_1$ & \begin{tabular}[c]{@{}c@{}}$Y_2 - Y_1$\\ I-S\end{tabular} & \begin{tabular}[c]{@{}c@{}}$Y_2 - Y_1$\\ I-S\end{tabular} & \begin{tabular}[c]{@{}c@{}}$Y_2 - Y_1$\\ I-S\end{tabular} & \begin{tabular}[c]{@{}c@{}}$Y_2 - Y_1$\\ I-S\end{tabular} & Ambos & Toggle \\
+\hline
+ &  & 0-0 & 0-1 & 1-0 & 1-1 &  &  \\
+A & 00 & X & X & 01 & X & 1 & 0 \\
+B & 01 & 00 & X & X & 11 & 0 & 1 \\
+C & 10 & X & X & 01 & X & 0 & 0 \\
+D & 11 & X & X & X & X & X & X	\\
+\hline
 \end{tabular}
 \end{table}
 
