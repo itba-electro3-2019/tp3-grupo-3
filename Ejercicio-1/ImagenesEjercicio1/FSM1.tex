@@ -1,0 +1,33 @@
+\input{Header-FSM.tex}
+
+\begin{document}
+
+\begin{page}
+\centering
+\begin{tikzpicture}
+
+	%DEFINICIONES
+	\tikzstyle{every node}=[font=\footnotesize]	
+	\tikzstyle{base} = [draw, align=center, line width=0.25mm, fill={rgb,255:red,204; green,255; blue,204}, minimum width=2cm, minimum height=1.25cm]	
+	\tikzstyle{blank} = [align=center, inner sep=0pt, outer sep=0pt]	
+	\tikzstyle{block} = [draw, rounded corners=0.1cm, align=center, line width=0.25mm, fill={rgb,255:red,209; green,225; blue,243}, minimum width=2cm, minimum height=2cm]	
+	\tikzstyle{flecha} = [->, line width=0.25mm, >=latex]
+	\tikzstyle{linea} = [line width=0.25mm, >=latex]
+	\tikzstyle{meas} = [draw, rectangle, densely dashed, minimum width=0.2cm, minimum height=0.6cm]
+	\tikzstyle{circulo} = [circle,fill=black,inner sep=0pt,minimum size=3pt]
+	
+	%BLOQUES
+	\draw(0,0) node[block, minimum height=1cm](1){A: Vacío};
+	\draw(4,0) node[block, minimum height=1cm](2){C: Medio};
+	\draw(2,-2) node[block, minimum height=1cm](3){F: Lleno};
+	
+	%FLECHAS
+	\draw [flecha] (1.east) -- (2.west) node[midway, blank]{};
+	
+	\draw [flecha] (3.north) to[out=90,in=180] (2.west);
+	\draw [flecha] (2.south) to[out=-90,in=0] (3.east);
+	\draw [flecha] (2.west) to[out=90,in=90] (1.east);
+\end{tikzpicture}	
+\end{page}
+
+\end{document}

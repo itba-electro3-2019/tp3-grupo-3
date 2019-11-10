@@ -221,10 +221,7 @@ Se realizaron mediciones de tanto correcta transición entre estados como de niv
 \caption{Mediciones del circuito implementado.}
 \end{figure}
 
-Se puede observar que el level shifting de niveles de tensión funcionan correctamente. Los niveles de tensión son $V_{OL} = 10 \ mV$, $V_{OH} = 4.8 \ V$, $V_{3.3_{H}} \geq 3.1 \ V$ y $V_{3.3_{L}} \approx 0 \ V$
-\end{itemize}
-
-Se destaca que $V_{3.3}$ representa el nivel de tensión de la lógica interna del circuito, mientras que $V_{OL}$ y $V_{OH}$ son los niveles de tensión altos y bajos conseguidos a la salida $Z$.
+Se puede observar que el level shifting de niveles de tensión funcionan correctamente. Los niveles de tensión son $V_{OL} = 10 \ mV$, $V_{OH} = 4.8 \ V$, $V_{3.3_{H}} \geq 3.1 \ V$ y $V_{3.3_{L}} \approx 0 \ V$. Se destaca que $V_{3.3}$ representa el nivel de tensión de la lógica interna del circuito, mientras que $V_{OL}$ y $V_{OH}$ son los niveles de tensión altos y bajos conseguidos a la salida $Z$.
 
 Luego, se observa en las Figuras (\ref{states1}) y (\ref{states2}) que la transición de estados funciona correctamente habiendo probado todas las combinaciones posibles. Por otro lado, en la Figura (\ref{output}) se observa que la salida posee los valores adecuados, siendo cero para todos los estados excepto en el $01$, para el cual la salida es igual a un uno lógico. Finalmente, se destaca que el consumo de corriente del circuito es de $15 \ mA$ en todos los estados excepto en el estado $01$ posee un consumo de $32 \ mA$.
 

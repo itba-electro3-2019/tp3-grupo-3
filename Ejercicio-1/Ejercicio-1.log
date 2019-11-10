@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.4.5)  9 NOV 2019 17:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.14)  10 NOV 2019 00:47
 entering extended mode
 **./Ejercicio-1.tex
 (Ejercicio-1.tex
-LaTeX2e <2018-04-01> patch level 5
+LaTeX2e <2018-12-01>
 ! Undefined control sequence.
 l.1 \subsection
                {Introducción}
@@ -782,7 +782,7 @@ Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.28 	\includegraphics
-                      [width=0.7\textwidth]{ImagenesEjercicio1/Bloques-TT.pdf}
+                      [width=0.7\textwidth, page = 1]{ImagenesEjercicio1/FSM...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -799,20 +799,11 @@ Missing character: There is no = in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 7 in font nullfont!
-! Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.28 	\includegraphics[width=0.7\textwidth]
-                                           {ImagenesEjercicio1/Bloques-TT.pdf}
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
-                   ]
-l.28 	\includegraphics[width=0.7\textwidth]
-                                           {ImagenesEjercicio1/Bloques-TT.pdf}
+                   p
+l.28 	\includegraphics[width=0.7\textwidth, pa
+                                              ge = 1]{ImagenesEjercicio1/FSM...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -820,6 +811,12 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no I in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -840,16 +837,10 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no / in font nullfont!
-Missing character: There is no B in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no T in font nullfont!
-Missing character: There is no T in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no 1 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no d in font nullfont!
@@ -862,7 +853,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.29 	\caption
-              {Finite state machine.}
+              {Finite State Machine.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -872,12 +863,12 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
+Missing character: There is no S in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no m in font nullfont!
+Missing character: There is no M in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -1002,6 +993,49 @@ or  <return>  to continue without it.
 Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+<recently read> \multirow 
+                          
+l.38 \multirow
+              {3}{*}{Estado actual} & \multicolumn{4}{c}{Próximo estado} & ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no I in font nullfont!
 Missing character: There is no - in font nullfont!
 Missing character: There is no S in font nullfont!
@@ -1038,26 +1072,19 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no - in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no A in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no x in font nullfont!
+Missing character: There is no X in font nullfont!
+Missing character: There is no X in font nullfont!
 Missing character: There is no B in font nullfont!
-Missing character: There is no x in font nullfont!
+Missing character: There is no X in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no B in font nullfont!
 Missing character: There is no A in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no x in font nullfont!
+Missing character: There is no X in font nullfont!
+Missing character: There is no X in font nullfont!
 Missing character: There is no C in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
-Missing character: There is no C in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no B in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 0 in font nullfont!
 
 ! LaTeX Error: \caption outside float.
 
@@ -1065,7 +1092,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45 \caption
+l.46 \caption
              {Tabla de transiciones del sistema.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1107,24 +1134,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.47 \end{table}
+l.48 \end{table}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 33--48
+Overfull \hbox (20.0pt too wide) in paragraph at lines 33--49
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 33--48
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 33--49
 []
  []
 
 
-Overfull \hbox (174.06421pt too wide) in paragraph at lines 33--48
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 33--49
 []
  []
 
@@ -1148,7 +1175,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...ference `tab:estados' on page \thepage 
                                                   \space undefined\on@line .
-l.49 A partir de la Tabla (\ref{tab:estados}
+l.50 A partir de la Tabla (\ref{tab:estados}
                                             ) y la Figura (\ref{fig:fsm}) se...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1157,7 +1184,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `tab:estados' on page  undefined on input line 49.
+LaTeX Warning: Reference `tab:estados' on page  undefined on input line 50.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no y in font nullfont!
@@ -1173,7 +1200,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...: Reference `fig:fsm' on page \thepage 
                                                   \space undefined\on@line .
-l.49 ...f{tab:estados}) y la Figura (\ref{fig:fsm}
+l.50 ...f{tab:estados}) y la Figura (\ref{fig:fsm}
                                                   ) se puede llegar a la sig...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1182,7 +1209,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:fsm' on page  undefined on input line 49.
+LaTeX Warning: Reference `fig:fsm' on page  undefined on input line 50.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -1297,7 +1324,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.50 \begin{table}
+l.51 \begin{table}
                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1306,6 +1333,60 @@ or  <return>  to continue without it.
 Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+<recently read> \multirow 
+                          
+l.55 \multirow
+              {3}{*}{Estado actual} & Codificación & \multicolumn{4}{c}{Pr�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no I in font nullfont!
 Missing character: There is no - in font nullfont!
 Missing character: There is no S in font nullfont!
@@ -1344,11 +1425,11 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no A in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no x in font nullfont!
+Missing character: There is no X in font nullfont!
+Missing character: There is no X in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
-Missing character: There is no x in font nullfont!
+Missing character: There is no X in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no B in font nullfont!
@@ -1356,8 +1437,8 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no x in font nullfont!
+Missing character: There is no X in font nullfont!
+Missing character: There is no X in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 0 in font nullfont!
@@ -1365,22 +1446,22 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no C in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 0 in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no x in font nullfont!
+Missing character: There is no X in font nullfont!
+Missing character: There is no X in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
-Missing character: There is no x in font nullfont!
+Missing character: There is no X in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no x in font nullfont!
+Missing character: There is no X in font nullfont!
+Missing character: There is no X in font nullfont!
+Missing character: There is no X in font nullfont!
+Missing character: There is no X in font nullfont!
+Missing character: There is no X in font nullfont!
+Missing character: There is no X in font nullfont!
 
 ! LaTeX Error: \begin{document} ended by \end{table}.
 
@@ -1388,49 +1469,49 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.62 \end{table}
+l.65 \end{table}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 49--63
+Overfull \hbox (20.0pt too wide) in paragraph at lines 50--66
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 49--63
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 50--66
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 49--63
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 50--66
 []
  []
 
 
-Overfull \hbox (9.38895pt too wide) in paragraph at lines 49--63
+Overfull \hbox (9.38895pt too wide) in paragraph at lines 50--66
 \OML/cmm/m/it/10 y[]$
  []
 
 
-Overfull \hbox (9.38895pt too wide) in paragraph at lines 49--63
+Overfull \hbox (9.38895pt too wide) in paragraph at lines 50--66
 \OML/cmm/m/it/10 y[]$
  []
 
 
-Overfull \hbox (10.29169pt too wide) in paragraph at lines 49--63
+Overfull \hbox (10.29169pt too wide) in paragraph at lines 50--66
 \OML/cmm/m/it/10 Y[]$
  []
 
 
-Overfull \hbox (10.29169pt too wide) in paragraph at lines 49--63
+Overfull \hbox (10.29169pt too wide) in paragraph at lines 50--66
 \OML/cmm/m/it/10 Y[]$
  []
 
 
-Overfull \hbox (294.6391pt too wide) in paragraph at lines 49--63
+Overfull \hbox (162.22208pt too wide) in paragraph at lines 50--66
 []
  []
 
@@ -1593,7 +1674,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 64--65
+Overfull \hbox (20.0pt too wide) in paragraph at lines 67--68
 []
  []
 
@@ -1658,7 +1739,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 66--67
+Overfull \hbox (20.0pt too wide) in paragraph at lines 69--70
 []
  []
 
@@ -1669,7 +1750,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.68 \begin{figure}
+l.71 \begin{figure}
                    [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1685,7 +1766,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.70 \begin{subfigure}
+l.73 \begin{subfigure}
                       {.49\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1697,7 +1778,7 @@ Missing character: There is no 9 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.70 \begin{subfigure}{.49\textwidth}
+l.73 \begin{subfigure}{.49\textwidth}
                                      
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1706,7 +1787,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.70 \begin{subfigure}{.49\textwidth}
+l.73 \begin{subfigure}{.49\textwidth}
                                      
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1716,7 +1797,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.72 	\includegraphics
+l.75 	\includegraphics
                       [width=0.7\textwidth]{ImagenesEjercicio1/Mapa1.pdf}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1737,7 +1818,7 @@ Missing character: There is no 7 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.72 	\includegraphics[width=0.7\textwidth]
+l.75 	\includegraphics[width=0.7\textwidth]
                                            {ImagenesEjercicio1/Mapa1.pdf}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1746,7 +1827,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.72 	\includegraphics[width=0.7\textwidth]
+l.75 	\includegraphics[width=0.7\textwidth]
                                            {ImagenesEjercicio1/Mapa1.pdf}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1791,7 +1872,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 	\caption
+l.76 	\caption
               {Tabla de Karnaugh para $Y_1$.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1823,7 +1904,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.75 \end{subfigure}
+l.78 \end{subfigure}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1836,7 +1917,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 \begin{subfigure}
+l.79 \begin{subfigure}
                       {.49\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1848,7 +1929,7 @@ Missing character: There is no 9 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.76 \begin{subfigure}{.49\textwidth}
+l.79 \begin{subfigure}{.49\textwidth}
                                      
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1857,7 +1938,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.76 \begin{subfigure}{.49\textwidth}
+l.79 \begin{subfigure}{.49\textwidth}
                                      
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1867,7 +1948,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.78 	\includegraphics
+l.81 	\includegraphics
                       [width=0.7\textwidth]{ImagenesEjercicio1/Mapa2.pdf}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1888,7 +1969,7 @@ Missing character: There is no 7 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.78 	\includegraphics[width=0.7\textwidth]
+l.81 	\includegraphics[width=0.7\textwidth]
                                            {ImagenesEjercicio1/Mapa2.pdf}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1897,7 +1978,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.78 	\includegraphics[width=0.7\textwidth]
+l.81 	\includegraphics[width=0.7\textwidth]
                                            {ImagenesEjercicio1/Mapa2.pdf}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1942,7 +2023,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.79 	\caption
+l.82 	\caption
               {Tabla de Karnaugh para $Y_2$.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1974,24 +2055,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 \end{subfigure}
+l.84 \end{subfigure}
                      \\
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 68--81
+Overfull \hbox (20.0pt too wide) in paragraph at lines 71--84
  [] 
  []
 
 
-Overfull \hbox (10.29169pt too wide) in paragraph at lines 68--81
+Overfull \hbox (10.29169pt too wide) in paragraph at lines 71--84
  \OML/cmm/m/it/10 Y[]$ 
  []
 
 
-Overfull \hbox (10.29169pt too wide) in paragraph at lines 68--81
+Overfull \hbox (10.29169pt too wide) in paragraph at lines 71--84
  \OML/cmm/m/it/10 Y[]$ 
  []
 
@@ -2002,7 +2083,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \begin{subfigure}
+l.85 \begin{subfigure}
                       {.49\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2014,7 +2095,7 @@ Missing character: There is no 9 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.82 \begin{subfigure}{.49\textwidth}
+l.85 \begin{subfigure}{.49\textwidth}
                                      
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -2023,7 +2104,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.82 \begin{subfigure}{.49\textwidth}
+l.85 \begin{subfigure}{.49\textwidth}
                                      
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2033,7 +2114,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.84 	\includegraphics
+l.87 	\includegraphics
                       [width=0.5\textwidth]{ImagenesEjercicio1/Mapa3.pdf}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2054,7 +2135,7 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.84 	\includegraphics[width=0.5\textwidth]
+l.87 	\includegraphics[width=0.5\textwidth]
                                            {ImagenesEjercicio1/Mapa3.pdf}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -2063,7 +2144,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.84 	\includegraphics[width=0.5\textwidth]
+l.87 	\includegraphics[width=0.5\textwidth]
                                            {ImagenesEjercicio1/Mapa3.pdf}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2108,7 +2189,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 	\caption
+l.88 	\caption
               {Tabla de Karnaugh para ``Ambos''.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2149,7 +2230,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.87 \end{subfigure}
+l.90 \end{subfigure}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2162,7 +2243,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.88 \begin{subfigure}
+l.91 \begin{subfigure}
                       {.49\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2174,7 +2255,7 @@ Missing character: There is no 9 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.88 \begin{subfigure}{.49\textwidth}
+l.91 \begin{subfigure}{.49\textwidth}
                                      
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -2183,7 +2264,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.88 \begin{subfigure}{.49\textwidth}
+l.91 \begin{subfigure}{.49\textwidth}
                                      
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2193,7 +2274,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.90 	\includegraphics
+l.93 	\includegraphics
                       [width=0.5\textwidth]{ImagenesEjercicio1/Mapa4.pdf}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2214,7 +2295,7 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.90 	\includegraphics[width=0.5\textwidth]
+l.93 	\includegraphics[width=0.5\textwidth]
                                            {ImagenesEjercicio1/Mapa4.pdf}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -2223,7 +2304,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.90 	\includegraphics[width=0.5\textwidth]
+l.93 	\includegraphics[width=0.5\textwidth]
                                            {ImagenesEjercicio1/Mapa4.pdf}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2268,7 +2349,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91 	\caption
+l.94 	\caption
               {Tabla de Karnaugh para ``Toggle''.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2310,7 +2391,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.93 \end{subfigure}
+l.96 \end{subfigure}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2323,7 +2404,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.94 \caption
+l.97 \caption
              {Tablas de Karnaugh para cada variable analizada.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2377,7 +2458,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96 \end{figure}
+l.99 \end{figure}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2404,8 +2485,8 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...: Reference `fig:kar' on page \thepage 
                                                   \space undefined\on@line .
-l.98 A partir de la Figura (\ref{fig:kar}
-                                         ) se derivan las siguientes expresi...
+l.101 A partir de la Figura (\ref{fig:kar}
+                                          ) se derivan las siguientes expres...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2413,7 +2494,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:kar' on page  undefined on input line 98.
+LaTeX Warning: Reference `fig:kar' on page  undefined on input line 101.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -2451,12 +2532,12 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 98--99
+Overfull \hbox (20.0pt too wide) in paragraph at lines 101--102
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 98--99
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 101--102
 []
  []
 
@@ -2467,14 +2548,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.100 \begin{split}
+l.103 \begin{split}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.101 	Y_1 = &
+l.104 	Y_1 = &
                I \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2484,7 +2565,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.102 	Y_2 = &
+l.105 	Y_2 = &
                S
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2494,20 +2575,20 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{equation} on input line 99 ended by \end{split}.
+! LaTeX Error: \begin{equation} on input line 102 ended by \end{split}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 \end{split}
+l.106 \end{split}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (59.13867pt too wide) detected at line 104
+Overfull \hbox (59.13867pt too wide) detected at line 107
 \OML/cmm/m/it/10 Y[] \/cmr/m/n/10 = \OML/cmm/m/it/10 I[] Y[] \/cmr/m/n/10 = \OM
 L/cmm/m/it/10 S
  []
@@ -2519,14 +2600,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.106 \begin{split}
+l.109 \begin{split}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.107 Ambos = &
+l.110 Ambos = &
                 \ \overline{y_2+y_1} \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2536,7 +2617,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.108 Toggle = &
+l.111 Toggle = &
                  \ y_1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2546,20 +2627,20 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{equation} on input line 105 ended by \end{split}.
+! LaTeX Error: \begin{equation} on input line 108 ended by \end{split}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.109 \end{split}
+l.112 \end{split}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (127.3356pt too wide) detected at line 110
+Overfull \hbox (127.3356pt too wide) detected at line 113
 \OML/cmm/m/it/10 Ambos \/cmr/m/n/10 =  [][] \OML/cmm/m/it/10 Toggle \/cmr/m/n/1
 0 =  \OML/cmm/m/it/10 y[]
  []
@@ -2616,7 +2697,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.113 \begin{figure}
+l.116 \begin{figure}
                     [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2626,7 +2707,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.115 	\includegraphics
+l.118 	\includegraphics
                        [width=0.6\textwidth, page=1]{ImagenesEjercicio1/Circ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2647,7 +2728,7 @@ Missing character: There is no 6 in font nullfont!
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p
-l.115 	\includegraphics[width=0.6\textwidth, pa
+l.118 	\includegraphics[width=0.6\textwidth, pa
                                                ge=1]{ImagenesEjercicio1/Circ...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2702,7 +2783,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 		\caption
+l.119 		\caption
                 {Circuito FSM.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2726,14 +2807,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 \end{figure}
+l.121 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 112--119
+Overfull \hbox (20.0pt too wide) in paragraph at lines 115--122
 []
  []
 
@@ -2828,7 +2909,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121 \begin{figure}
+l.124 \begin{figure}
                     [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2838,7 +2919,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.123 	\includegraphics
+l.126 	\includegraphics
                        [width=0.8\textwidth, page=2]{ImagenesEjercicio1/Circ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2859,7 +2940,7 @@ Missing character: There is no 8 in font nullfont!
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p
-l.123 	\includegraphics[width=0.8\textwidth, pa
+l.126 	\includegraphics[width=0.8\textwidth, pa
                                                ge=2]{ImagenesEjercicio1/Circ...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2914,7 +2995,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.124 	\caption
+l.127 	\caption
                {Circuito FSM con Toggle.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2947,34 +3028,34 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 \end{figure}
+l.129 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 120--127
+Overfull \hbox (20.0pt too wide) in paragraph at lines 123--130
 []
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 120--127
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 123--130
 \/cmr/m/n/10 o
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 120--127
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 123--130
 \/cmr/m/n/10 o
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 120--127
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 123--130
 \/cmr/m/n/10 o
  []
 
 ! Undefined control sequence.
-l.128 \subsection
+l.131 \subsection
                  {Implementación y mediciones}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3007,7 +3088,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (25.00002pt too wide) in paragraph at lines 128--129
+Overfull \hbox (25.00002pt too wide) in paragraph at lines 131--132
 []\/cmr/m/n/10 o
  []
 
@@ -3094,7 +3175,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.131 \begin{figure}
+l.134 \begin{figure}
                     [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3104,7 +3185,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.133 	\includegraphics
+l.136 	\includegraphics
                        [width=0.7\textwidth]{ImagenesEjercicio1/PCB.PNG}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3125,7 +3206,7 @@ Missing character: There is no 7 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.133 	\includegraphics[width=0.7\textwidth]
+l.136 	\includegraphics[width=0.7\textwidth]
                                             {ImagenesEjercicio1/PCB.PNG}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3134,7 +3215,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.133 	\includegraphics[width=0.7\textwidth]
+l.136 	\includegraphics[width=0.7\textwidth]
                                             {ImagenesEjercicio1/PCB.PNG}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3177,7 +3258,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134 	\caption
+l.137 	\caption
                {PCB en Altium de los circuitos.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3215,7 +3296,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.135 \end{figure}
+l.138 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3228,7 +3309,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.136 \begin{figure}
+l.139 \begin{figure}
                     [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3238,7 +3319,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.138 	\includegraphics
+l.141 	\includegraphics
                        [width=0.8\textwidth]{ImagenesEjercicio1/pcbReal.jpeg}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3259,7 +3340,7 @@ Missing character: There is no 8 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.138 	\includegraphics[width=0.8\textwidth]
+l.141 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/pcbReal.jpeg}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3268,7 +3349,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.138 	\includegraphics[width=0.8\textwidth]
+l.141 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/pcbReal.jpeg}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3316,7 +3397,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139 	\caption
+l.142 	\caption
                {Placa implementada.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3346,19 +3427,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 \end{figure}
+l.143 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 130--141
+Overfull \hbox (20.0pt too wide) in paragraph at lines 133--144
 []
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 130--141
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 133--144
 \/cmr/m/n/10 o
  []
 
@@ -3478,7 +3559,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.143 \begin{figure}
+l.146 \begin{figure}
                     [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3488,7 +3569,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.145 	\includegraphics
+l.148 	\includegraphics
                        [width=0.8\textwidth]{ImagenesEjercicio1/00-01.PNG}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3509,7 +3590,7 @@ Missing character: There is no 8 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.145 	\includegraphics[width=0.8\textwidth]
+l.148 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/00-01.PNG}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3518,7 +3599,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.145 	\includegraphics[width=0.8\textwidth]
+l.148 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/00-01.PNG}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3563,7 +3644,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.146 	\caption
+l.149 	\caption
                {Transición 00-01.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3590,7 +3671,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.148 \end{figure}
+l.151 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3603,7 +3684,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \begin{figure}
+l.152 \begin{figure}
                     [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3613,7 +3694,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.151 	\includegraphics
+l.154 	\includegraphics
                        [width=0.8\textwidth]{ImagenesEjercicio1/00-10.PNG}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3634,7 +3715,7 @@ Missing character: There is no 8 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.151 	\includegraphics[width=0.8\textwidth]
+l.154 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/00-10.PNG}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3643,7 +3724,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.151 	\includegraphics[width=0.8\textwidth]
+l.154 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/00-10.PNG}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3688,7 +3769,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.152 	\caption
+l.155 	\caption
                {Transición 00-10.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3715,7 +3796,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.154 \end{figure}
+l.157 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3728,7 +3809,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.155 \begin{figure}
+l.158 \begin{figure}
                     [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3738,7 +3819,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.157 	\includegraphics
+l.160 	\includegraphics
                        [width=0.8\textwidth]{ImagenesEjercicio1/01-00.PNG}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3759,7 +3840,7 @@ Missing character: There is no 8 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.157 	\includegraphics[width=0.8\textwidth]
+l.160 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/01-00.PNG}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3768,7 +3849,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.157 	\includegraphics[width=0.8\textwidth]
+l.160 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/01-00.PNG}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3813,7 +3894,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158 	\caption
+l.161 	\caption
                {Transición 01-00.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3840,7 +3921,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.160 \end{figure}
+l.163 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3853,7 +3934,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.161 \begin{figure}
+l.164 \begin{figure}
                     [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3863,7 +3944,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.163 	\includegraphics
+l.166 	\includegraphics
                        [width=0.8\textwidth]{ImagenesEjercicio1/01-11.PNG}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3884,7 +3965,7 @@ Missing character: There is no 8 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.163 	\includegraphics[width=0.8\textwidth]
+l.166 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/01-11.PNG}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3893,7 +3974,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.163 	\includegraphics[width=0.8\textwidth]
+l.166 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/01-11.PNG}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3938,7 +4019,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.164 	\caption
+l.167 	\caption
                {Transición 01-11.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3965,7 +4046,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.166 \end{figure}
+l.169 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3978,7 +4059,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.167 \begin{figure}
+l.170 \begin{figure}
                     [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3988,7 +4069,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.169 	\includegraphics
+l.172 	\includegraphics
                        [width=0.8\textwidth]{ImagenesEjercicio1/10-00.PNG}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4009,7 +4090,7 @@ Missing character: There is no 8 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.169 	\includegraphics[width=0.8\textwidth]
+l.172 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/10-00.PNG}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -4018,7 +4099,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.169 	\includegraphics[width=0.8\textwidth]
+l.172 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/10-00.PNG}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -4063,7 +4144,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.170 	\caption
+l.173 	\caption
                {Transición 10-00.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4090,7 +4171,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.172 \end{figure}
+l.175 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4103,7 +4184,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.173 \begin{figure}
+l.176 \begin{figure}
                     [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4113,7 +4194,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.175 	\includegraphics
+l.178 	\includegraphics
                        [width=0.8\textwidth]{ImagenesEjercicio1/10-11.PNG}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4134,7 +4215,7 @@ Missing character: There is no 8 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.175 	\includegraphics[width=0.8\textwidth]
+l.178 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/10-11.PNG}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -4143,7 +4224,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.175 	\includegraphics[width=0.8\textwidth]
+l.178 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/10-11.PNG}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -4188,7 +4269,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.176 	\caption
+l.179 	\caption
                {Transición 10-11.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4215,7 +4296,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.178 \end{figure}
+l.181 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4228,7 +4309,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.179 \begin{figure}
+l.182 \begin{figure}
                     [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4238,7 +4319,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.181 	\includegraphics
+l.184 	\includegraphics
                        [width=0.8\textwidth]{ImagenesEjercicio1/11-01.PNG}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4259,7 +4340,7 @@ Missing character: There is no 8 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.181 	\includegraphics[width=0.8\textwidth]
+l.184 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/11-01.PNG}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -4268,7 +4349,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.181 	\includegraphics[width=0.8\textwidth]
+l.184 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/11-01.PNG}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -4313,7 +4394,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.182 	\caption
+l.185 	\caption
                {Transición 11-01.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4340,7 +4421,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.184 \end{figure}
+l.187 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4353,7 +4434,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.185 \begin{figure}
+l.188 \begin{figure}
                     [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4363,7 +4444,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.187 	\includegraphics
+l.190 	\includegraphics
                        [width=0.8\textwidth]{ImagenesEjercicio1/11-10.PNG}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4384,7 +4465,7 @@ Missing character: There is no 8 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.187 	\includegraphics[width=0.8\textwidth]
+l.190 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/11-10.PNG}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -4393,7 +4474,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.187 	\includegraphics[width=0.8\textwidth]
+l.190 	\includegraphics[width=0.8\textwidth]
                                             {ImagenesEjercicio1/11-10.PNG}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -4438,7 +4519,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.188 	\caption
+l.191 	\caption
                {Transición 11-10.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4465,7 +4546,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.190 \end{figure}
+l.193 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4479,11 +4560,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 32 strings out of 492970
- 426 string characters out of 3126595
- 66627 words of memory out of 3000000
- 4003 multiletter control sequences out of 15000+200000
+ 32 strings out of 492895
+ 422 string characters out of 3122801
+ 65543 words of memory out of 3000000
+ 4046 multiletter control sequences out of 15000+200000
  3948 words of font info for 15 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,13n,16p,394b,195s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 18i,13n,16p,305b,165s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!
