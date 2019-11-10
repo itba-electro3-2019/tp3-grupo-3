@@ -1,0 +1,75 @@
+\input{Header-DFF.tex}
+
+\begin{document}
+
+\begin{page}
+\begin{circuitikz}
+
+	%DIBUJO EL DFF
+	\ctikzset{multipoles/thickness=3}
+	\ctikzset{multipoles/dipchip/width=1.25}
+	\draw (0,0) node[dipchip, num pins=8, hide numbers, no topmark, external pins width=0](C1){};
+	\node [right, font=\footnotesize] at (C1.bpin 1) {D};
+	\node [left, font=\footnotesize] at (C1.bpin 8) {$Q$};
+	\draw (C1.bpin 4) ++(0,0.1) -- ++(0.1,-0.1) node[right, font=\footnotesize]{CLK} -- ++ (-0.1,-0.1);	
+	\draw (C1.bpin 4) -- ++(-0.3,0) node[](CLK1){} -- ++(-0.5,0) node[circ, label=left:$CLK$](){};	
+	%SALIDA
+	\draw (C1.bpin 8) -- ++(0.3,0) node[](Q1){} -- ++(0.5,0) node[circ, label=right:$y_1$](){};	
+	%ENTRADA	
+	\draw (C1.bpin 1) -- ++(-0.3,0) node[](D1){} -- ++(-0.5,0) node[american or port, anchor = out](or1){};
+	
+	%DE ATRAS PARA ADELANTE, DE ABAJO PARA ARRIBA:
+	%PRIMER OR Y PRIMER AND
+	\draw (or1.in 2) -| ++(-0.5,-0.5) node[american and port, anchor = out, number inputs=3](and1){};
+	\draw (and1.in 3) -- ++(-0.5,0) node[circ, label=left:$\overline{y_1}$](){};
+	\draw (and1.in 2) -- ++(-0.5,0) node[circ, label=left:$\overline{y_2}$](){};
+	\draw (and1.in 1) -- ++(-0.5,0) node[circ, label=left:$In$](){}; 	
+	
+	%SEGUNDO OR
+	\draw (or1.in 1) -| ++(-0.5,1) node[american or port, anchor = out](or2){};
+	
+	%SEGUNDO AND
+	\draw (or2.in 2) |- ++(-0.5,-0.5) node[american and port, anchor = out, number inputs=3](and2){};
+	\draw (and2.in 3) -- ++(-0.5,0) node[circ, label=left:$\overline{y_1}$](){};
+	\draw (and2.in 2) -- ++(-0.5,0) node[circ, label=left:$y_2$](){};
+	\draw (and2.in 1) -- ++(-0.5,0) node[circ, label=left:$\overline{In}$](){};
+	
+	%TERCER AND
+	\draw (or2.in 1) |- ++(-0.5,1) node[american and port, anchor = out, number inputs=3](and3){};
+	\draw (and3.in 3) -- ++(-0.5,0) node[circ, label=left:$y_1$](){};
+	\draw (and3.in 2) -- ++(-0.5,0) node[circ, label=left:$y_2$](){};
+	\draw (and3.in 1) -- ++(-0.5,0) node[circ, label=left:$In$](){};
+	
+	\draw (and3.out) -- ++(1,0) node[circ, label=above:$Out$](){};
+
+	%CIRCUITO DE ABAJO
+
+	%DIBUJO EL DFF
+	\ctikzset{multipoles/thickness=3}
+	\ctikzset{multipoles/dipchip/width=1.25}
+	\draw (0,-4) node[dipchip, num pins=8, hide numbers, no topmark, external pins width=0](C1){};
+	\node [right, font=\footnotesize] at (C1.bpin 1) {D};
+	\node [left, font=\footnotesize] at (C1.bpin 8) {$Q$};
+	\draw (C1.bpin 4) ++(0,0.1) -- ++(0.1,-0.1) node[right, font=\footnotesize]{CLK} -- ++ (-0.1,-0.1);	
+	\draw (C1.bpin 4) -- ++(-0.3,0) node[](CLK1){} -- ++(-0.5,0) node[circ, label=left:$CLK$](){};	
+	%SALIDA
+	\draw (C1.bpin 8) -- ++(0.3,0) node[](Q1){} -- ++(0.5,0) node[circ, label=right:$y_2$](){};	
+	%ENTRADA	
+	\draw (C1.bpin 1) -- ++(-0.3,0) node[](D1){} -- ++(-0.5,0) node[american or port, anchor = out](or1){};
+	
+	%DE ATRAS PARA ADELANTE, DE ABAJO PARA ARRIBA:
+	%PRIMER OR Y PRIMER AND
+	\draw (or1.in 2) -| ++(-0.5,-0.5) node[american and port, anchor = out, number inputs=3](and1){};
+	\draw (and1.in 3) -- ++(-0.5,0) node[circ, label=left:$y_1$](){};
+	\draw (and1.in 2) -- ++(-0.5,0) node[circ, label=left:$\overline{y_2}$](){};
+	\draw (and1.in 1) -- ++(-0.5,0) node[circ, label=left:$In$](){}; 	
+	
+	%SEGUNDO AND
+	\draw (or1.in 1) -| ++(-0.5,0.5) node[american and port, anchor = out, number inputs=3](and2){};
+	\draw (and2.in 3) -- ++(-0.5,0) node[circ, label=left:$\overline{y_1}$](){};
+	\draw (and2.in 2) -- ++(-0.5,0) node[circ, label=left:$y_2$](){};
+	\draw (and2.in 1) -- ++(-0.5,0) node[circ, label=left:$\overline{In}$](){};
+\end{circuitikz}
+\end{page}
+
+\end{document}

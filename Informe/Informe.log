@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.14)  9 NOV 2019 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.14)  10 NOV 2019 00:21
 entering extended mode
 **./Informe.tex
 (Informe.tex
@@ -1078,35 +1078,35 @@ Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/Bloques-TT.pdf  used
 File: ../Ejercicio-1/ImagenesEjercicio1/Mapa1.pdf Graphic file (type pdf)
 <use ../Ejercicio-1/ImagenesEjercicio1/Mapa1.pdf>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/Mapa1.pdf  used on i
-nput line 72.
+nput line 75.
 (pdftex.def)             Requested size: 175.6685pt x 144.04097pt.
 <../Ejercicio-1/ImagenesEjercicio1/Mapa2.pdf, id=112, 202.13016pt x 165.73718pt
 >
 File: ../Ejercicio-1/ImagenesEjercicio1/Mapa2.pdf Graphic file (type pdf)
 <use ../Ejercicio-1/ImagenesEjercicio1/Mapa2.pdf>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/Mapa2.pdf  used on i
-nput line 78.
+nput line 81.
 (pdftex.def)             Requested size: 175.6685pt x 144.04097pt.
 <../Ejercicio-1/ImagenesEjercicio1/Mapa3.pdf, id=113, 123.48032pt x 100.6992pt>
 
 File: ../Ejercicio-1/ImagenesEjercicio1/Mapa3.pdf Graphic file (type pdf)
 <use ../Ejercicio-1/ImagenesEjercicio1/Mapa3.pdf>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/Mapa3.pdf  used on i
-nput line 84.
+nput line 87.
 (pdftex.def)             Requested size: 125.47806pt x 102.33075pt.
 <../Ejercicio-1/ImagenesEjercicio1/Mapa4.pdf, id=114, 123.48032pt x 100.6992pt>
 
 File: ../Ejercicio-1/ImagenesEjercicio1/Mapa4.pdf Graphic file (type pdf)
 <use ../Ejercicio-1/ImagenesEjercicio1/Mapa4.pdf>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/Mapa4.pdf  used on i
-nput line 90.
+nput line 93.
 (pdftex.def)             Requested size: 125.47806pt x 102.33075pt.
 <../Ejercicio-1/ImagenesEjercicio1/Circuitos.pdf, id=116, page=1, 309.08777pt x
  190.65126pt>
 File: ../Ejercicio-1/ImagenesEjercicio1/Circuitos.pdf Graphic file (type pdf)
 <use ../Ejercicio-1/ImagenesEjercicio1/Circuitos.pdf, page 1>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/Circuitos.pdf , page
-1 used on input line 115.
+1 used on input line 118.
 (pdftex.def)             Requested size: 307.29288pt x 189.55696pt.
  [3 <../Ejercicio-1/ImagenesEjercicio1/Mapa1.pdf> <../Ejercicio-1/ImagenesEjerc
 icio1/Mapa2.pdf> <../Ejercicio-1/ImagenesEjercicio1/Mapa3.pdf> <../Ejercicio-1/
@@ -1116,21 +1116,21 @@ ImagenesEjercicio1/Mapa4.pdf>]
 File: ../Ejercicio-1/ImagenesEjercicio1/Circuitos.pdf Graphic file (type pdf)
 <use ../Ejercicio-1/ImagenesEjercicio1/Circuitos.pdf, page 2>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/Circuitos.pdf , page
-2 used on input line 123.
+2 used on input line 126.
 (pdftex.def)             Requested size: 409.72124pt x 249.28511pt.
 <../Ejercicio-1/ImagenesEjercicio1/PCB.PNG, id=145, 1101.36469pt x 570.63188pt>
 
 File: ../Ejercicio-1/ImagenesEjercicio1/PCB.PNG Graphic file (type png)
 <use ../Ejercicio-1/ImagenesEjercicio1/PCB.PNG>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/PCB.PNG  used on inp
-ut line 133.
+ut line 136.
 (pdftex.def)             Requested size: 358.50314pt x 185.7405pt.
 <../Ejercicio-1/ImagenesEjercicio1/pcbReal.jpeg, id=147, 633.11531pt x 317.6868
 7pt>
 File: ../Ejercicio-1/ImagenesEjercicio1/pcbReal.jpeg Graphic file (type jpg)
 <use ../Ejercicio-1/ImagenesEjercicio1/pcbReal.jpeg>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/pcbReal.jpeg  used o
-n input line 138.
+n input line 141.
 (pdftex.def)             Requested size: 409.72124pt x 205.59721pt.
  [4 <../Ejercicio-1/ImagenesEjercicio1/Circuitos.pdf> <../Ejercicio-1/ImagenesE
 jercicio1/Circuitos.pdf>]
@@ -1138,13 +1138,13 @@ jercicio1/Circuitos.pdf>]
 File: ../Ejercicio-1/ImagenesEjercicio1/00-01.PNG Graphic file (type png)
 <use ../Ejercicio-1/ImagenesEjercicio1/00-01.PNG>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/00-01.PNG  used on i
-nput line 145.
+nput line 148.
 (pdftex.def)             Requested size: 409.72124pt x 193.00064pt.
 <../Ejercicio-1/ImagenesEjercicio1/00-10.PNG, id=179, 789.9111pt x 346.896pt>
 File: ../Ejercicio-1/ImagenesEjercicio1/00-10.PNG Graphic file (type png)
 <use ../Ejercicio-1/ImagenesEjercicio1/00-10.PNG>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/00-10.PNG  used on i
-nput line 151.
+nput line 154.
 (pdftex.def)             Requested size: 409.72124pt x 179.93173pt.
  [5 <../Ejercicio-1/ImagenesEjercicio1/PCB.PNG> <../Ejercicio-1/ImagenesEjercic
 io1/pcbReal.jpeg>]
@@ -1152,19 +1152,19 @@ io1/pcbReal.jpeg>]
 File: ../Ejercicio-1/ImagenesEjercicio1/01-00.PNG Graphic file (type png)
 <use ../Ejercicio-1/ImagenesEjercicio1/01-00.PNG>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/01-00.PNG  used on i
-nput line 157.
+nput line 160.
 (pdftex.def)             Requested size: 409.72124pt x 189.46478pt.
 <../Ejercicio-1/ImagenesEjercicio1/01-11.PNG, id=188, 712.5822pt x 346.896pt>
 File: ../Ejercicio-1/ImagenesEjercicio1/01-11.PNG Graphic file (type png)
 <use ../Ejercicio-1/ImagenesEjercicio1/01-11.PNG>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/01-11.PNG  used on i
-nput line 163.
+nput line 166.
 (pdftex.def)             Requested size: 409.72124pt x 199.45834pt.
 <../Ejercicio-1/ImagenesEjercicio1/10-00.PNG, id=189, 711.8595pt x 346.896pt>
 File: ../Ejercicio-1/ImagenesEjercicio1/10-00.PNG Graphic file (type png)
 <use ../Ejercicio-1/ImagenesEjercicio1/10-00.PNG>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/10-00.PNG  used on i
-nput line 169.
+nput line 172.
 (pdftex.def)             Requested size: 409.72124pt x 199.66478pt.
  [6 <../Ejercicio-1/ImagenesEjercicio1/00-01.PNG> <../Ejercicio-1/ImagenesEjerc
 icio1/00-10.PNG> <../Ejercicio-1/ImagenesEjercicio1/01-00.PNG>]
@@ -1172,19 +1172,19 @@ icio1/00-10.PNG> <../Ejercicio-1/ImagenesEjercicio1/01-00.PNG>]
 File: ../Ejercicio-1/ImagenesEjercicio1/10-11.PNG Graphic file (type png)
 <use ../Ejercicio-1/ImagenesEjercicio1/10-11.PNG>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/10-11.PNG  used on i
-nput line 175.
+nput line 178.
 (pdftex.def)             Requested size: 409.72124pt x 188.37968pt.
 <../Ejercicio-1/ImagenesEjercicio1/11-01.PNG, id=202, 708.246pt x 346.896pt>
 File: ../Ejercicio-1/ImagenesEjercicio1/11-01.PNG Graphic file (type png)
 <use ../Ejercicio-1/ImagenesEjercicio1/11-01.PNG>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/11-01.PNG  used on i
-nput line 181.
+nput line 184.
 (pdftex.def)             Requested size: 409.72124pt x 200.68637pt.
 <../Ejercicio-1/ImagenesEjercicio1/11-10.PNG, id=203, 728.4816pt x 346.896pt>
 File: ../Ejercicio-1/ImagenesEjercicio1/11-10.PNG Graphic file (type png)
 <use ../Ejercicio-1/ImagenesEjercicio1/11-10.PNG>
 Package pdftex.def Info: ../Ejercicio-1/ImagenesEjercicio1/11-10.PNG  used on i
-nput line 187.
+nput line 190.
 (pdftex.def)             Requested size: 409.72124pt x 195.10733pt.
  [7 <../Ejercicio-1/ImagenesEjercicio1/01-11.PNG> <../Ejercicio-1/ImagenesEjerc
 icio1/10-00.PNG> <../Ejercicio-1/ImagenesEjercicio1/10-11.PNG>])
@@ -1202,7 +1202,7 @@ icio1/11-10.PNG>] [9 <../Ejercicio-3/ImagenesEjercicio3/fsm.png>]
 File: ../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf Graphic file (type pdf)
 <use ../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf, page 1>
 Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf , page1 
-used on input line 104.
+used on input line 105.
 (pdftex.def)             Requested size: 409.72124pt x 216.63663pt.
 \realshift=\dimen288
 \realshift=\dimen289
@@ -1213,14 +1213,14 @@ used on input line 104.
 File: ../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf Graphic file (type pdf)
 <use ../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf, page 2>
 Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf , page2 
-used on input line 169.
+used on input line 170.
 (pdftex.def)             Requested size: 512.1496pt x 225.8611pt.
  [10 <../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf>]
 <../Ejercicio-3/ImagenesEjercicio3/states.png, id=262, 1027.84pt x 825.0825pt>
 File: ../Ejercicio-3/ImagenesEjercicio3/states.png Graphic file (type png)
 <use ../Ejercicio-3/ImagenesEjercicio3/states.png>
 Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/states.png  used on 
-input line 189.
+input line 190.
 (pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
 <../Ejercicio-3/ImagenesEjercicio3/vlevels_states.png, id=264, 1027.84pt x 825.
 0825pt>
@@ -1228,14 +1228,14 @@ File: ../Ejercicio-3/ImagenesEjercicio3/vlevels_states.png Graphic file (type p
 ng)
 <use ../Ejercicio-3/ImagenesEjercicio3/vlevels_states.png>
 Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/vlevels_states.png  
-used on input line 195.
+used on input line 196.
 (pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
 <../Ejercicio-3/ImagenesEjercicio3/states2.png, id=266, 1027.84pt x 825.0825pt>
 
 File: ../Ejercicio-3/ImagenesEjercicio3/states2.png Graphic file (type png)
 <use ../Ejercicio-3/ImagenesEjercicio3/states2.png>
 Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/states2.png  used on
- input line 203.
+ input line 204.
 (pdftex.def)             Requested size: 358.50314pt x 237.82822pt.
  [11 <../Ejercicio-3/ImagenesEjercicio3/states.png> <../Ejercicio-3/ImagenesEje
 rcicio3/vlevels_states.png> <../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf>]
@@ -1243,7 +1243,7 @@ rcicio3/vlevels_states.png> <../Ejercicio-3/ImagenesEjercicio3/Maquina.pdf>]
 File: ../Ejercicio-3/ImagenesEjercicio3/output.png Graphic file (type png)
 <use ../Ejercicio-3/ImagenesEjercicio3/output.png>
 Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/output.png  used on 
-input line 211.
+input line 212.
 (pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
 <../Ejercicio-3/ImagenesEjercicio3/vlevels_low.png, id=286, 1027.84pt x 825.082
 5pt>
@@ -1251,7 +1251,7 @@ File: ../Ejercicio-3/ImagenesEjercicio3/vlevels_low.png Graphic file (type png)
 
 <use ../Ejercicio-3/ImagenesEjercicio3/vlevels_low.png>
 Package pdftex.def Info: ../Ejercicio-3/ImagenesEjercicio3/vlevels_low.png  use
-d on input line 217.
+d on input line 218.
 (pdftex.def)             Requested size: 250.95612pt x 166.4756pt.
  [12 <../Ejercicio-3/ImagenesEjercicio3/states2.png> <../Ejercicio-3/ImagenesEj
 ercicio3/output.png> <../Ejercicio-3/ImagenesEjercicio3/vlevels_low.png (PNG co
@@ -1278,8 +1278,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 36.
  ) 
 Here is how much of TeX's memory you used:
  30193 strings out of 492895
- 688502 string characters out of 3122801
- 885971 words of memory out of 3000000
+ 688509 string characters out of 3122801
+ 884969 words of memory out of 3000000
  33581 multiletter control sequences out of 15000+200000
  19552 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1305,7 +1305,7 @@ ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppD
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/User
 s/Usuario/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti
 12.pfb>
-Output written on Informe.pdf (14 pages, 836250 bytes).
+Output written on Informe.pdf (14 pages, 833519 bytes).
 PDF statistics:
  366 PDF objects out of 1000 (max. 8388607)
  58 named destinations out of 1000 (max. 500000)

@@ -1,7 +1,3 @@
-\input{../Informe/Header.tex}
-\input{karnaugh-map.tex}
-\begin{document}
-
 \subsection{Introducción}
 
 En esta sección se buscó implementar la siguiente máquina de estados finitos:
@@ -15,15 +11,16 @@ En esta sección se buscó implementar la siguiente máquina de estados finitos:
 Para esto, se conformó la tabla de estados considerando al estado $00$ como el inicial, resultando:
 \begin{table}[H]
 \centering
-\begin{tabular}{|c|l|c|l|c|l|c|}
+\begin{tabular}{cccc}
 \hline
-\multicolumn{2}{|c|}{\multirow{2}{*}{$Present State$}} & \multicolumn{4}{c|}{$Next State$} & \multirow{3}{*}{$Output (z)$} \\ \cline{3-6}
-\multicolumn{2}{|c|}{} & \multicolumn{2}{c|}{$w=0$} & \multicolumn{2}{c|}{$w=1$} &  \\
-\multicolumn{2}{|c|}{$y_2 y_1$} & \multicolumn{2}{c|}{$Y_2Y_1$} & \multicolumn{2}{c|}{$Y_2Y_1$} &  \\ \hline
-\multicolumn{2}{|c|}{00} & \multicolumn{2}{c|}{00} & \multicolumn{2}{c|}{01} & 0 \\ \hline
-\multicolumn{2}{|c|}{01} & \multicolumn{2}{c|}{00} & \multicolumn{2}{c|}{10} & 1 \\ \hline
-\multicolumn{2}{|c|}{10} & \multicolumn{2}{c|}{00} & \multicolumn{2}{c|}{10} & 0 \\ \hline
-\multicolumn{2}{|c|}{11} & \multicolumn{2}{c|}{xx} & \multicolumn{2}{c|}{xx} & x \\ \hline
+Estado actual & \multicolumn{2}{c}{Próximo estado} & Salida \\
+$y_2 y_1$ & \begin{tabular}[c]{@{}c@{}}$Y_2 Y_1$\\ $\omega = 0$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$Y_2 Y_1$\\ $\omega = 1$\end{tabular} &  \\
+\hline
+00 & 00 & 01 & 0 \\
+01 & 00 & 10 & 1 \\
+10 & 00 & 10 & 0 \\
+11 & X & X & X	\\
+\hline
 \end{tabular}
 \caption{Tabla de estados para la máquina de estados finita a implementar.}
 \label{fig:tablaestados}
@@ -150,7 +147,7 @@ Para la conversión de $3.3 \ V$ a $5 \ V$ de la salida se decidió utilizar un 
 				to[R, l^=$100 \ \Omega$]++(2.5,0)
 				to[open]++(0, -2)
 				node[tlground]{}
-				to[full ZZener diode, l_=$3.3 \ V$, -*] ++ (0, 2)
+				to[zzDo, l_=$3.3 \ V$, -*] ++ (0, 2)
 				
 				to[short] ++ (1, 0)
 				node[ocirc, label=east:$Out$]{}
@@ -224,12 +221,7 @@ Se realizaron mediciones de tanto correcta transición entre estados como de niv
 \caption{Mediciones del circuito implementado.}
 \end{figure}
 
-Se puede observar que el level shifting de niveles de tensión funcionan correctamente. Los niveles de tensión son:
-\begin{itemize}
-\item $V_{OL} = 10 \ mV$
-\item $V_{OH} = 4.8 \ V$
-\item $V_{3.3_{H}} \geq 3.1 \ V$
-\item $V_{3.3_{L}} \approx 0 \ V$
+Se puede observar que el level shifting de niveles de tensión funcionan correctamente. Los niveles de tensión son $V_{OL} = 10 \ mV$, $V_{OH} = 4.8 \ V$, $V_{3.3_{H}} \geq 3.1 \ V$ y $V_{3.3_{L}} \approx 0 \ V$
 \end{itemize}
 
 Se destaca que $V_{3.3}$ representa el nivel de tensión de la lógica interna del circuito, mientras que $V_{OL}$ y $V_{OH}$ son los niveles de tensión altos y bajos conseguidos a la salida $Z$.
@@ -241,5 +233,3 @@ Luego, se observa en las Figuras (\ref{states1}) y (\ref{states2}) que la transi
 Se implementó la FSM propuesta habiendo cumplido los requisitos de niveles de tensión de lógica interna. Si bien la transición de $5 \ V$ a $3.3 \ V$ funcionó correctamente, el consumo de corriente es muy elevado, observandose un máximo de $32 \ mA$. Si se hubiera deseado un consumo menor, se debería utilizar un step-down level-shifters, valiéndose transistores como se realizó para el step-up level-shifter. Este logró mantener la salida en una tensión muy baja para el estado lógico bajo y en una tensión aceptable para el estado de tensión lógico alto, con un error de $200 \ mV$ por debajo del deseado. Sin embargo, estos niveles de tensión se encuentran totalmente dentro de estándares de márgenes de ruido tanto para la tecnología TTL como para CMOS. Luego, la tensión alta de la lógica interna de $3.1 \ V$ se encuentra también dentro de los márgenes de ruido para ambas tecnologías.
 
 Otras posibles implementaciones para el step-down parten del uso de un divisor resistivo, lo cual disminuye el consumo de corriente, ya que dentro de los valores de resistencias que se pueden utilizar, se hayan aquellas de $10 \ k\Omega$ o más, ya que estos valores no son lo suficientemente altos como para generar un divisor resistivo con la impedancia de entrada de la compuerta CMOS ni para provocar una corriente comparable con el consumo de estas compuertas. Otra implementación se centra en el uso de un comparador. Este último es más barato que un transistor, pero se descartó por su gran tamaño y por poseer implementaciones más simples con mismo resultado.
-
-\end{document}

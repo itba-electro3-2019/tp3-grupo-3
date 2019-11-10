@@ -11,15 +11,16 @@ En esta sección se buscó implementar la siguiente máquina de estados finitos:
 Para esto, se conformó la tabla de estados considerando al estado $00$ como el inicial, resultando:
 \begin{table}[H]
 \centering
-\begin{tabular}{|c|l|c|l|c|l|c|}
+\begin{tabular}{cccc}
 \hline
-\multicolumn{2}{|c|}{\multirow{2}{*}{$Present State$}} & \multicolumn{4}{c|}{$Next State$} & \multirow{3}{*}{$Output (z)$} \\ \cline{3-6}
-\multicolumn{2}{|c|}{} & \multicolumn{2}{c|}{$w=0$} & \multicolumn{2}{c|}{$w=1$} &  \\
-\multicolumn{2}{|c|}{$y_2 y_1$} & \multicolumn{2}{c|}{$Y_2Y_1$} & \multicolumn{2}{c|}{$Y_2Y_1$} &  \\ \hline
-\multicolumn{2}{|c|}{00} & \multicolumn{2}{c|}{00} & \multicolumn{2}{c|}{01} & 0 \\ \hline
-\multicolumn{2}{|c|}{01} & \multicolumn{2}{c|}{00} & \multicolumn{2}{c|}{10} & 1 \\ \hline
-\multicolumn{2}{|c|}{10} & \multicolumn{2}{c|}{00} & \multicolumn{2}{c|}{10} & 0 \\ \hline
-\multicolumn{2}{|c|}{11} & \multicolumn{2}{c|}{xx} & \multicolumn{2}{c|}{xx} & x \\ \hline
+Estado actual & \multicolumn{2}{c}{Próximo estado} & Salida \\
+$y_2 y_1$ & \begin{tabular}[c]{@{}c@{}}$Y_2 Y_1$\\ $\omega = 0$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$Y_2 Y_1$\\ $\omega = 1$\end{tabular} &  \\
+\hline
+00 & 00 & 01 & 0 \\
+01 & 00 & 10 & 1 \\
+10 & 00 & 10 & 0 \\
+11 & X & X & X	\\
+\hline
 \end{tabular}
 \caption{Tabla de estados para la máquina de estados finita a implementar.}
 \label{fig:tablaestados}
@@ -146,7 +147,7 @@ Para la conversión de $3.3 \ V$ a $5 \ V$ de la salida se decidió utilizar un 
 				to[R, l^=$100 \ \Omega$]++(2.5,0)
 				to[open]++(0, -2)
 				node[tlground]{}
-				to[full ZZener diode, l_=$3.3 \ V$, -*] ++ (0, 2)
+				to[zzDo, l_=$3.3 \ V$, -*] ++ (0, 2)
 				
 				to[short] ++ (1, 0)
 				node[ocirc, label=east:$Out$]{}
@@ -220,15 +221,7 @@ Se realizaron mediciones de tanto correcta transición entre estados como de niv
 \caption{Mediciones del circuito implementado.}
 \end{figure}
 
-Se puede observar que el level shifting de niveles de tensión funcionan correctamente. Los niveles de tensión son:
-\begin{itemize}
-\item $V_{OL} = 10 \ mV$
-\item $V_{OH} = 4.8 \ V$
-\item $V_{3.3_{H}} \geq 3.1 \ V$
-\item $V_{3.3_{L}} \approx 0 \ V$
-\end{itemize}
-
-Se destaca que $V_{3.3}$ representa el nivel de tensión de la lógica interna del circuito, mientras que $V_{OL}$ y $V_{OH}$ son los niveles de tensión altos y bajos conseguidos a la salida $Z$.
+Se puede observar que el level shifting de niveles de tensión funcionan correctamente. Los niveles de tensión son $V_{OL} = 10 \ mV$, $V_{OH} = 4.8 \ V$, $V_{3.3_{H}} \geq 3.1 \ V$ y $V_{3.3_{L}} \approx 0 \ V$. Se destaca que $V_{3.3}$ representa el nivel de tensión de la lógica interna del circuito, mientras que $V_{OL}$ y $V_{OH}$ son los niveles de tensión altos y bajos conseguidos a la salida $Z$.
 
 Luego, se observa en las Figuras (\ref{states1}) y (\ref{states2}) que la transición de estados funciona correctamente habiendo probado todas las combinaciones posibles. Por otro lado, en la Figura (\ref{output}) se observa que la salida posee los valores adecuados, siendo cero para todos los estados excepto en el $01$, para el cual la salida es igual a un uno lógico. Finalmente, se destaca que el consumo de corriente del circuito es de $15 \ mA$ en todos los estados excepto en el estado $01$ posee un consumo de $32 \ mA$.
 
