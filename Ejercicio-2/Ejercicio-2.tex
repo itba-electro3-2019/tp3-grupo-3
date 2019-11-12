@@ -90,6 +90,8 @@ Como era de esperarse, dicho circuito emula satisfactoriamente la máquina de es
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\textwidth,trim={0 2.2cm 0.1cm 1.75cm},clip]{ImagenesEjercicio2/scope_0.png}
-\caption{Detección de la secuencia deseada vista en el osciloscopio.}
+\caption{Detección de la secuencia deseada vista en el osciloscopio, en verde la señal de clock, en amarillo la señal de entrada y en violeta la salida.}
+
+En la figura anterior se puede presenciar el funcionamiento de la maquina de estados, en ella se puede presenciar un desfasaje en el que pareciera que la salida se logra en un estado bajo del clock pero dicha suposición es erronéa ya que esto se debe a que no se logró una sincronización entre la señal de entrada y el generador de clock y dichas señales a su vez como la señal de salida poseen frecuencias distintas por lo que son dificiles de captar en el osciloscopio al mismo tiempo, ergo se produce dicho desplazamiento entre las 3 señales. 
 \end{figure}
 \end{document}
