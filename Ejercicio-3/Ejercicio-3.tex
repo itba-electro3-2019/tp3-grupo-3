@@ -115,7 +115,7 @@ Se simuló la implementación obtenida en la sección anterior utilizando $Veril
 Para esta etapa se tuvo un cuidado especial dado que era un requisito en la implementación que la lógica interna del circuito funcione con $3.3 \ V$, mientras que las entradas y salidas debían operar con $5 \ V$.
 
 \subsubsection{Level Shifting}
-Para la conversión de $3.3 \ V$ a $5 \ V$ de la salida se decidió utilizar un transistor bipolar NPN como indica la Figura (\ref{circ:stepup}). Luego, para las entradas, las cuales deben pasar de $5 \ V$ a $3.3 \ V	$, se utilizó un diodo zener de $3.3 \ V$ con una resistencia limitadora de corriente, la cual fue calculada conociendo la corriente de codo del diodo y la corriente de entrada de las compuertas de tecnología CMOS empleadas. Esta implementación se puede observar en la Figura(\ref{circ:stepdown}). 
+Para la conversión de $3.3 \ V$ a $5 \ V$ de la salida se decidió utilizar un transistor bipolar NPN como indica la Figura (\ref{circ:stepup}). Luego, para las entradas, las cuales deben pasar de $5 \ V$ a $3.3 \ V	$, se utilizó un diodo zener de $3.3 \ V$ con una resistencia limitadora de corriente, la cual fue calculada conociendo la corriente de codo del diodo y la corriente de entrada de las compuertas de tecnología CMOS empleadas. Esta implementación se puede observar en la Figura (\ref{circ:stepdown}). 
 
 \begin{figure}[H]
 
