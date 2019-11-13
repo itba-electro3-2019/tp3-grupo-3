@@ -1,8 +1,5 @@
-\input{../Informe/Header.tex}
-\usepackage{multirow}
-\begin{document}
-
 \section{Ejercicio 2}
+
 \subsection{Introdución}
 En esta sección se procede a realizar una máquina de estados capaz de detectar una secuencia de bits dada, siendo esta 1-1-0-1.
 
@@ -89,7 +86,9 @@ Como era de esperarse, dicho circuito emula satisfactoriamente la máquina de es
 
 \begin{figure}[H]
 \centering
-\includegraphics{ImagenesEjercicio2/pend.jpg}
+\includegraphics[width=0.6\textwidth,trim={0 2.2cm 0.1cm 1.75cm},clip]{ImagenesEjercicio2/scope_0.png}
 \caption{Detección de la secuencia deseada vista en el osciloscopio.}
+\label{fig:med-ej2}
 \end{figure}
-\end{document}
+
+En la Figura (\ref{fig:med-ej2}) se presenta una medición de la detección de la secuencia deseada. En ella, se presentan en verde la señal de clock, en amarillo la señal de entrada y en violeta la salida. Además, es posible presenciar el funcionamiento de la maquina de estados. En ella, se presenta un desfasaje, en el que pareciera que la salida se logra en un estado bajo del clock. Dicha suposición es errónea, ya que esto se debe a que no se logró una sincronización entre la señal de entrada y el generador de clock. Dichas señales, a su vez, dado que la señal de salida pose una frecuencia distinta, se dificulta la captura de esta en el osciloscopio a un mismo tiempo, por lo tanto, se produce dicho desplazamiento entre las 3 señales.
