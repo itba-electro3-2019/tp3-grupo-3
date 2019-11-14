@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=Not_input Pin=U5-3
+Removed Pin From Net: NetName=not_y1 Pin=U5-4
+Added Pin To Net: NetName=VDD Pin=U2-14
+Added Pin To Net: NetName=not_y1 Pin=U5-3
+Added Pin To Net: NetName=Not_input Pin=U5-4
+Added Room: Name=ej_2

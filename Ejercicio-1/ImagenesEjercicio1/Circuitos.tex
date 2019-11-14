@@ -1,0 +1,84 @@
+\input{Header-DFF.tex}
+
+\begin{document}
+
+%Circuito FSM
+\begin{page}
+\begin{circuitikz}
+
+	%DIBUJO LOS DFF
+	\ctikzset{multipoles/thickness=3}
+	\ctikzset{multipoles/dipchip/width=1.25}
+	\draw (0,0) node[dipchip, num pins=8, hide numbers, no topmark, external pins width=0](C1){};
+	\node [right, font=\footnotesize] at (C1.bpin 1) {D};
+	\node [left, font=\footnotesize] at (C1.bpin 8) {$Q$};
+	\draw (C1.bpin 4) ++(0,0.1) -- ++(0.1,-0.1) node[right, font=\footnotesize]{CLK} -- ++ (-0.1,-0.1);
+	
+	\draw (C1) ++ (0,-3) node[dipchip, num pins=8, hide numbers, no topmark, external pins width=0](C2){};
+	\node [right, font=\footnotesize] at (C2.bpin 1) {D};
+	\node [left, font=\footnotesize] at (C2.bpin 8) {$Q$};
+	\draw (C2.bpin 4) ++(0,0.1) -- ++(0.1,-0.1) node[right, font=\footnotesize]{CLK} -- ++ (-0.1,-0.1);
+	
+	%CLK
+	\draw (C1.bpin 4) -- ++(-0.3,0) node[](CLK1){};	
+	\draw (C2.bpin 4) -- ++(-0.3,0) node[](CLK2){};
+	
+	%SALIDAS
+	\draw (C1.bpin 8) -- ++(0.3,0) node[label=above:$y_1$](Q1){};	
+	\draw (C2.bpin 8) -- ++(0.3,0) node[label=above:$y_2$](Q2){};
+	
+	%ENTRADAS	
+	\draw (C1.bpin 1) -- ++(-0.3,0) node[label=above:$Y_1$](D1){};	
+	\draw (C2.bpin 1) -- ++(-0.3,0) node[label=above:$Y_2$](D2){};
+	
+	\draw (D1.center) -- ++(-1.5,0) node[label=left:$I$, circ](){};
+	\draw (D2.center) -- ++(-1.5,0) node[label=left:$S$, circ](){};
+	
+	%NOR
+	\draw (Q1.center) -- ++(1,0) node[american nor port, anchor = in 1](nor){};
+	\draw (Q2.center) -| (nor.in 2);
+	\draw (nor.out) -- ++(0.5,0) node[label=right:$Ambos$, circ](){};
+	
+	\draw (CLK2.center) -- ++(-0.5,0) node[circ](ay-alan){} -- ++(-1,0) node[circ, label=west:$CLK$](CLK){};
+	\draw (CLK1.center) -| (ay-alan);
+
+\end{circuitikz}
+\end{page}
+
+%Circuito FSM CON TOGGLE
+\begin{page}
+\begin{circuitikz}
+
+	\ctikzset{multipoles/thickness=3}
+	\ctikzset{multipoles/dipchip/width=1.25}
+
+	%AND
+	\node[american and port](and){};
+	\draw (and.in 1) -| ++(-0.5,0.5) node[american not port, anchor=out, xscale=0.5, yscale=0.5](not1){};
+	\draw (not1.in) -- ++(-0.5,0) node[label=left:$y_1$, circ](){};
+	\draw (and.in 2) -| ++(-0.75,-0.5) -- ++(-1,0) node[label=left:$y_2$, circ](){};
+	
+	%TFF
+	\draw (and.out) |- ++(1,-3) node[dipchip, num pins=8, hide numbers, no topmark, external pins width=0, anchor=bpin 4](C1){};
+	\node [right, font=\footnotesize] at (C1.bpin 1) {T};
+	\node [left, font=\footnotesize] at (C1.bpin 8) {$Q$};
+	\draw (C1.bpin 4) ++(0,0.1) -- ++(0.1,-0.1) node[right, font=\footnotesize]{CLK} -- ++ (-0.1,-0.1);
+	
+	\draw (C1.bpin 1) -- ++(-0.3,0) node[](T1){} -- ++(0,0.5) node[label=left:$1$, circ](){};
+	\draw (C1.bpin 8) -- ++(0.3,0) node[](Q1){} -| ++(0.25,0.575) node[label=above:$0$](aux1){};
+	
+	\draw[line width=0.85pt] (aux1.center) -- ++ (0.25,-0.25) -- ++(0,0.5) node[](mux0){} -- ++ (0,1) node[](mux1){} -- ++(0,0.5) -- ++(-0.25,-0.25) node[label=below:$1$](){} -- ++(-0.25,-0.25) -- ++ (0,-0.5) node[](muxout){} -- ++(0,-0.5) -- ++(0.25,-0.25);
+	
+	\draw (and.out) -- (muxout.center);
+	\draw (mux0.center) -| ++(1,1.5) node[american or port, anchor=in 2](or1){};
+	\draw (or1.out) -- ++(0.5,0) node[label=right:$B_2$, circ](){};
+	\draw (mux1.center) -- ++(0.5,0) |- ++(0.5,2) node[american or port, anchor=in 2](or2){};
+	\draw (or2.out) -- ++(0.5,0) node[label=right:$B_1$, circ](){};
+	
+	\draw (or2.in 1) -- ++(-2,0) node[circ](tuvi){} -- ++(-2,0) node[label=left:$Ambos$, circ](){};
+	\draw (tuvi.center) |- (or1.in 1);
+
+\end{circuitikz}
+\end{page}
+
+\end{document}

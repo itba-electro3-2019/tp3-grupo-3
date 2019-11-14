@@ -1,0 +1,189 @@
+\input{Header-DFF.tex}
+
+\begin{document}
+
+\begin{page}
+\begin{circuitikz}
+
+	%PRIMER FF
+	\ctikzset{multipoles/thickness=3}
+	\ctikzset{multipoles/dipchip/width=1.25}
+	\draw (0,0) node[dipchip, num pins=8, hide numbers, no topmark, external pins width=0](C1){};
+	\node [right, font=\footnotesize] at (C1.bpin 1) {$Y_1$};
+	\node [left, font=\footnotesize] at (C1.bpin 8) {$y_1$};
+	\node [left, font=\footnotesize] at (C1.bpin 5) {$\overline{y_1}$};
+	\draw (C1.bpin 4) ++(0,0.1) -- ++(0.1,-0.1) node[right, font=\footnotesize]{CLK} -- ++ (-0.1,-0.1);
+	
+	\draw (C1.bpin 8) -- ++(0.3,0) node[](FF1_3){} node[](FF1_y){};
+	\draw (C1.bpin 5) ++(0.3,0) node[](FF1_2){};
+	\draw (C1.bpin 4) -- ++(-0.3,0) node[](FF1_CLK){};	
+	\draw (C1.bpin 1) -- ++(-0.3,0) node[](FF1_4){} node[](FF1_Y){};				
+				
+	%Segundp FF
+	\draw (0,-3) node[dipchip, num pins=8, hide numbers, no topmark, external pins width=0](C2){};
+	\node [right, font=\footnotesize] at (C2.bpin 1) {$Y_2$};
+	\node [left, font=\footnotesize] at (C2.bpin 8) {$y_2$};
+	\node [left, font=\footnotesize] at (C2.bpin 5) {$\overline{y_2}$};
+	\draw (C2.bpin 4) ++(0,0.1) -- ++(0.1,-0.1) node[right, font=\footnotesize]{CLK} -- ++ (-0.1,-0.1);
+	
+	\draw (C2.bpin 8) -- ++(0.3,0) node[](FF2_y){};
+	\draw (C2.bpin 5) -- ++(0.3,0) node[](FF2_-y){};
+	\draw (C2.bpin 4) -- ++(-0.3,0) node[](FF2_CLK){};	
+	\draw (C2.bpin 1) -- ++(-0.3,0) node[](FF2_Y){};				
+			
+			
+	%RESTO DEL DIBUJO DE ALAN		
+	\draw (FF2_CLK.center) -- ++(-0.25,0) node[circ](ay-alan){} -- ++(-3.5,0) node[ocirc, label=west:$CLK$](CLK){};
+	\draw (FF1_CLK.center) -| (ay-alan);
+	
+	\draw
+						
+		(FF1_Y) ++ (-0.5, 0) node[and port, xscale=0.7, yscale=0.7](and1){}
+		(and1.in 1) ++ (-0.5, 0) node[nor port, xscale=0.7, yscale=0.7](nor1){}
+			
+			(FF2_Y) ++ (-0.5, 0) node[and port, xscale=0.7, yscale=0.7](and2){}
+			(and2.in 2) ++ (-0.5, 0) node[nor port, xscale=0.7, yscale=0.7](nor2){}
+			(and2.in 2) ++ (-2, 0) node[nor port, xscale=0.7, yscale=0.7](nor3){}
+		
+			(-4, -1)node[ocirc, label=west:$w$](w){}
+			(w)-|(and1.in 2)
+			(w)-|(and2.in 1)
+			
+			(nor2.in 1) -- (nor2.in 2)
+			(nor2.in 1) to[open, -*] ++ (0, -0.2) -- (nor3.out)
+			(and2.in 2) -- (nor2.out)
+			(and1.in 1) -- (nor1.out)
+			(and1.out) -- (FF1_Y.center)
+			(and2.out) -- (FF2_Y.center)
+			
+			(4, -1.5) node[and port, xscale=0.7, yscale=0.7](andout){}
+			(FF2_-y) to[short]++(1, 0) |- (andout.in 2)
+
+			(FF1_y)to[short]++(0, 1)to[short]++(-8,0)
+				to[short, -*]++(0, -0.6)node[](aux){}
+				(aux.center)--(nor1.in 1)
+				(aux.center)|-(nor3.in 1)
+				
+			(FF2_y)to[short]++(0, -2.5)to[short]++(-9,0)|-(nor3.in 2)
+			++(-0.25, 0) node[circ]{} |- (nor1.in 2)
+			
+			(FF1_y.center)node[circ]{}to[short]++(1, 0)|-(andout.in 1)
+			(andout.out)to[short] ++ (0.5, 0) node[label=east:$z$, circ]{}
+		;
+\end{circuitikz}
+\end{page}
+
+\begin{page}
+
+\begin{circuitikz}
+
+	%PRIMER FF
+	\ctikzset{multipoles/thickness=3}
+	\ctikzset{multipoles/dipchip/width=1.25}
+	\draw (0,0) node[dipchip, num pins=8, hide numbers, no topmark, external pins width=0](C1){};
+	\node [right, font=\footnotesize] at (C1.bpin 1) {$Y_1$};
+	\node [left, font=\footnotesize] at (C1.bpin 8) {$y_1$};
+	\node [left, font=\footnotesize] at (C1.bpin 5) {$\overline{y_1}$};
+	\draw (C1.bpin 4) ++(0,0.1) -- ++(0.1,-0.1) node[right, font=\footnotesize]{CLK} -- ++ (-0.1,-0.1);
+	
+	\draw (C1.bpin 8) -- ++(0.3,0) node[](FF1_3){} node[](FF1_y){};
+	\draw (C1.bpin 5) ++(0.3,0) node[](FF1_2){};
+	\draw (C1.bpin 4) -- ++(-0.3,0) node[](FF1_CLK){};	
+	\draw (C1.bpin 1) -- ++(-0.3,0) node[](FF1_4){} node[](FF1_Y){};				
+				
+	%Segundp FF
+	\draw (0,-3) node[dipchip, num pins=8, hide numbers, no topmark, external pins width=0](C2){};
+	\node [right, font=\footnotesize] at (C2.bpin 1) {$Y_2$};
+	\node [left, font=\footnotesize] at (C2.bpin 8) {$y_2$};
+	\node [left, font=\footnotesize] at (C2.bpin 5) {$\overline{y_2}$};
+	\draw (C2.bpin 4) ++(0,0.1) -- ++(0.1,-0.1) node[right, font=\footnotesize]{CLK} -- ++ (-0.1,-0.1);
+	
+	\draw (C2.bpin 8) -- ++(0.3,0) node[](FF2_y){};
+	\draw (C2.bpin 5) -- ++(0.3,0) node[](FF2_-y){};
+	\draw (C2.bpin 4) -- ++(-0.3,0) node[](FF2_CLK){};	
+	\draw (C2.bpin 1) -- ++(-0.3,0) node[](FF2_Y){};
+	
+		\draw (FF2_CLK.center) -- ++(-0.25,0) node[circ](ay-alan){} -- ++(-3.5,0) node[circ, label=above:$CLK'$](CLK){};
+	\draw (FF1_CLK.center) -| (ay-alan);
+	
+	\draw					
+					
+			
+			(FF1_Y) ++ (-0.5, 0) node[and port, xscale=0.7, yscale=0.7](and1){}
+			(and1.in 1) ++ (-0.5, 0) node[nor port, xscale=0.7, yscale=0.7](nor1){}
+			
+			(FF2_Y) ++ (-0.5, 0) node[and port, xscale=0.7, yscale=0.7](and2){}
+			(and2.in 2) ++ (-0.5, 0) node[nor port, xscale=0.7, yscale=0.7](nor2){}
+			(and2.in 2) ++ (-2, 0) node[nor port, xscale=0.7, yscale=0.7](nor3){}
+		
+			(-4, -1)node[label=north:$w'$](w){}
+			(w)-|(and1.in 2)
+			(w)-|(and2.in 1)
+			
+			(nor2.in 1) -- (nor2.in 2)
+			(nor2.in 1) to[open, -*] ++ (0, -0.2) -- (nor3.out)
+			(and2.in 2) -- (nor2.out)
+			(and1.in 1) -- (nor1.out)
+			(and1.out) -- (FF1_Y.center)
+			(and2.out) -- (FF2_Y.center)
+			
+			(4, -1.5) node[and port, xscale=0.7, yscale=0.7](andout){}
+			(FF2_-y) to[short]++(1, 0) |- (andout.in 2)
+
+			(FF1_y)to[short]++(0, 1)to[short]++(-8,0)
+				to[short, -*]++(0, -0.6)node[](aux){}
+				(aux.center)--(nor1.in 1)
+				(aux.center)|-(nor3.in 1)
+				
+			(FF2_y)to[short]++(0, -2.5)to[short]++(-8,0)|-(nor3.in 2)
+			++(-0.25, 0) node[circ]{} |- (nor1.in 2)
+			
+			(FF1_y.center)node[circ]{}to[short]++(1, 0)|-(andout.in 1)
+			(andout.out)to[short] ++ (0.5, 0) node[label=north:$z'$]{}
+
+			
+			(andout.out)
+			node[](in){}
+			++(1.5, 0) node[npn, rotate=-90](npn){}
+			(npn.B) ++ (0, 2)node[](3v3){}
+			(3v3)to[R=$2.2 \ k\Omega$]++(0, -2)
+			(3v3)++(2, 0)node[](5v){}
+			(5v)to[R=$6.8 \ k\Omega$]++(0, -2)to[short, -*]++(0, -0.83)
+			(npn.C) to[short]++(2.5, 0)node[ocirc, label=east:$z$]{}
+			(npn.E)--(in.center)
+						
+			(w)++(-7, 0)			
+				node[label=west:$w$,circ]{}
+				to[R, l^=$100 \ \Omega$]++(3,0)
+				to[open]++(0, -2)
+				node[tlground]{}
+				to[zzDo, l=$3.3 \ V \ \ $, -*] ++ (0, 2)
+				to[short]++(4.12,0)
+				
+			(CLK)++(-7, 0)			
+				node[label=west:$CLK$, circ]{}
+				to[R, l^=$100 \ \Omega$]++(3,0)
+				to[open]++(0, -2)
+				node[tlground]{}
+				to[zzDo, l=$3.3 \ V \ \ $, -*] ++ (0, 2)
+				to[short]++(4.12,0)
+				
+			(w) ++ (0, 3) ++(-7, 0)			
+				node[label=west:$5 \ V$, circ]{}
+				to[R, l^=$100 \ \Omega$]++(3,0)
+				to[open]++(0, -2)
+				node[tlground]{}
+				to[zzDo, l=$3.3 \ V \ \ $, -*] ++ (0, 2)
+				node[](aux2){}
+				to[short]++(0, 0.5)
+				to[open]++(0, -0.5)
+				to[short]++(13.62,0)
+				to[short]++(0, -0.65)
+				(aux2)to[short]++(0, 0.75)to[short]++(1, 0)node[ocirc, label=east:$3.3 \ V$]{}
+			(w) ++ (0, 3) ++(-6.5, 0) to[short]++(0, 1.5)to[short]++(18.12, 0)to[short]++(0, -2.15)
+		;
+	\end{circuitikz}
+
+\end{page}
+
+\end{document}
